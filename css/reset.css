@@ -56,11 +56,23 @@
     height: 100%;
   }
 
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+
+  .card {
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 150px 0;
   }
   /* ---------------------------------------------------------------- */
 
