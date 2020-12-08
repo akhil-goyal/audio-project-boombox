@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  
+  /* ------------------------- Basic Resets ----------------------- */
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* ------------------------- Layout Elements ----------------------- */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* --------------------------- Text Sizes ------------------------- */
+  .lead-text {
+    font-size: 20px;
+  }
+
+  .xl-text {
+    font-size: 4rem;
+  }
+
+  .lg-text {
+    font-size: 3rem;
+  }
+
+  .md-text {
+    font-size: 2rem;
+  }
+  
+  .sm-text {
+    font-size: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* ----------------------------- Margins --------------------------- */
+  .my-1 {
+    margin: 1rem 0;
+  }
+  
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  
+  .my-3 {
+    margin: 2rem 0;
+  }
+  
+  .my-4 {
+    margin: 3rem 0;
+  }
+  
+  .my-5 {
+    margin: 4rem 0;
+  }
+  
+  .m-1 {
+    margin: 1rem;
+  }
+  
+  .m-2 {
+    margin: 1.5rem;
+  }
+  
+  .m-3 {
+    margin: 2rem;
+  }
+  
+  .m-4 {
+    margin: 3rem;
+  }
+  
+  .m-5 {
+    margin: 4rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+   /* ---------------------------- Paddings -------------------------- */
+  .py-1 {
+    padding: 1rem 0;
+  }
+  
+  .py-2 {
+    padding: 1.5rem 0;
+  }
+  
+  .py-3 {
+    padding: 2rem 0;
+  }
+  
+  .py-4 {
+    padding: 3rem 0;
+  }
+  
+  .py-5 {
+    padding: 4rem 0;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .p-2 {
+    padding: 1.5rem;
+  }
+  
+  .p-3 {
+    padding: 2rem;
+  }
+  
+  .p-4 {
+    padding: 3rem;
+  }
+  
+  .p-5 {
+    padding: 4rem;
+  }
+  /* ---------------------------------------------------------------- */
