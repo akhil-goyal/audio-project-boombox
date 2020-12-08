@@ -45,7 +45,8 @@
 }
 
 .hero-text {
-  padding: 30vh 0;
+  padding: 20rem 0;
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -100,5 +101,17 @@
 .partners-box {
   background-color: rgb(131, 56, 131);
   color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* ---------------------------------------------------------------- */
+
+
+/* ---------------------------- Footer ---------------------------- */
+footer {
+  background-color: #210654;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 /* ---------------------------------------------------------------- */
