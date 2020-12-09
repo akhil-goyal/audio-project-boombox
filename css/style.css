@@ -95,6 +95,8 @@
 /* ---------------------------------------------------------------- */
 
 /* --------------------------- Utilities -------------------------- */
+
+/* Songs List */
 .song-container {
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -126,6 +128,33 @@
 
 .play-bar input {
   width: 400px;
+}
+
+/* Voice Recorder */
+.vocals-box .grid {
+  gap: 0px;
+}
+
+.microphone {
+  grid-column: 1 / span 2;
+}
+
+.microphone img {
+  height: 30rem;
+  width: 25rem;
+}
+
+.waveforms {
+  grid-column: 1 / span 2;
+  height: 5rem; 
+  width: 34.3rem; 
+  text-align: center; 
+}
+
+.record-icon {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* ---------------------------------------------------------------- */
 
