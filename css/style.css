@@ -95,6 +95,38 @@
 /* ---------------------------------------------------------------- */
 
 /* --------------------------- Utilities -------------------------- */
+.song-container {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 20px;
+  margin: 0.1rem 0;
+}
+
+.song-container .grid {
+  gap: 0px;
+}
+
+.song-controls {
+  margin-right: auto;
+}
+
+.utilities .flex {
+  justify-content: space-evenly;
+}
+
+.song-thumbnail {
+  height: 80px; 
+  width: 80px; 
+  border-radius: 40px;
+}
+
+.play-bar {
+  grid-column: 1 / span 2;
+}
+
+.play-bar input {
+  width: 400px;
+}
 /* ---------------------------------------------------------------- */
 
 /* -------------------------- Our Partners ------------------------ */
