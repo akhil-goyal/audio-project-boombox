@@ -65,9 +65,9 @@
 /* ---------------------------- Services --------------------------- */
 .service-1 {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.171), 
-    rgba(0, 0, 0, 0.171)
-  ),url(/resources/img/hero-image.jpg);
+    rgba(0, 0, 0, 0.600), 
+    rgba(0, 0, 0, 0.600)
+  ),url(/resources/img/service-songs.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -75,9 +75,9 @@
 
 .service-2 {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.171), 
-    rgba(0, 0, 0, 0.171)
-  ),url(/resources/img/hero-image.jpg);
+    rgba(0, 0, 0, 0.500), 
+    rgba(0, 0, 0, 0.500)
+  ),url(/resources/img/service-vocals.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -85,9 +85,9 @@
 
 .service-3 {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.171), 
-    rgba(0, 0, 0, 0.171)
-  ),url(/resources/img/hero-image.jpg);
+    rgba(0, 0, 0, 0.400), 
+    rgba(0, 0, 0, 0.400)
+  ),url(/resources/img/service-instruments.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
