@@ -156,6 +156,32 @@
   width: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* Instruments */
+.division-instruments {
+  padding: 0px 50px;
+}
+
+.instrument-1 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.300), 
+    rgba(0, 0, 0, 0.300)
+  ),url(/resources/img/piano.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.instrument-2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.300), 
+    rgba(0, 0, 0, 0.300)
+  ),url(/resources/img/drum.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
 /* ---------------------------------------------------------------- */
 
 /* -------------------------- Our Partners ------------------------ */
