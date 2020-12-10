@@ -210,3 +210,35 @@ footer {
   padding: 1.5rem 0;
 }
 /* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------- Playbar ---------------------------- */
+.section-playbar {
+  height: 8rem;
+  width: 100%;
+  background-color:rgb(134, 47, 119);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+.section-playbar .flex {
+  justify-content: space-evenly;
+}
+
+.section-playbar img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.section-playbar input {
+  width: 70rem;
+}
+
+.section-playbar i {
+  font-size: 1rem;
+  padding: 0 1.5rem;
+}
+/* ---------------------------------------------------------------- */
