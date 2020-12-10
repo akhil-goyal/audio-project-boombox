@@ -186,10 +186,18 @@
 
 /* -------------------------- Our Partners ------------------------ */
 .partners-box {
-  background-color: rgb(131, 56, 131);
+  background-color: rgb(240, 240, 240);
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+}
+
+.partners-box h1 {
+  color: #000;
+}
+
+.partner-image {
+  width: 60%;
 }
 /* ---------------------------------------------------------------- */
 
