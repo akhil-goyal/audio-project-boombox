@@ -104,6 +104,16 @@ nav a:hover {
   margin-top: 3rem;
 }
 
+.utilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* Songs List */
 .song-container {
   background-color: rgb(0, 0, 0);
@@ -119,6 +129,10 @@ nav a:hover {
 .song-controls {
   margin-right: auto;
 }
+
+/* .utilities .grid {
+  background-color: rebeccapurple;
+} */
 
 .utilities .flex {
   justify-content: flex-end;
@@ -276,14 +290,18 @@ nav a:hover {
 
 /* -------------------------- Our Partners ------------------------ */
 .partners-box {
-  background-color: rgb(240, 240, 240);
+  background-color: #fff;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
 }
 
-.partners-box h1 {
+.partners-box h2 {
   color: #000;
+}
+
+.partner-brands {
+  margin-top: 2rem;
 }
 
 .partner-image {
@@ -297,7 +315,8 @@ footer {
   background-color: #210654;
   color: #fff;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
+  margin-bottom: 6.5rem;
 }
 /* ---------------------------------------------------------------- */
 
@@ -305,13 +324,12 @@ footer {
 
 /* ---------------------------- Playbar ---------------------------- */
 .section-playbar {
-  height: 8rem;
+  height: 6.5rem;
   width: 100%;
   background-color:rgb(134, 47, 119);
   color: #fff;
   position: fixed;
   bottom: 0;
-  display: none;
 }
 
 .section-playbar .flex {
@@ -319,9 +337,9 @@ footer {
 }
 
 .section-playbar img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
 }
 
 .section-playbar input {
