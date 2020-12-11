@@ -242,3 +242,113 @@ footer {
   padding: 0 1.5rem;
 }
 /* ---------------------------------------------------------------- */
+
+
+.piano-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.piano-modal .grid {
+  gap: 0px;
+}
+
+.piano-modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.piano-modal > div {
+  height: 30rem;
+  max-width: 1200px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.piano-button-close,
+.piano-main-text,
+.piano-player,
+.piano-play-button {
+  grid-column: 1 / span 2;
+}
+
+.piano-button-close a {
+  text-align: end;
+}
+
+
+
+
+.drumkit-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.drumkit-modal .grid {
+  gap: 0px;
+}
+
+.drumkit-modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.drumkit-modal > div {
+  height: 40rem;
+  max-width: 1200px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.drumkit-button-close,
+.drumkit-main-text,
+.drumkit-player,
+.drumkit-keys,
+.drumkit-play-button {
+  grid-column: 1 / span 2;
+}
+
+.drumkit-beat-container {
+  height: 6rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.drumkit-button-close a {
+  text-align: end;
+}
+
+.drumkit-player img {
+  width: 30%;
+}
