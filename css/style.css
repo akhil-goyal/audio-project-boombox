@@ -1,22 +1,20 @@
 /* ----------------------------- Navbar --------------------------- */
-
 .navbar {
   background-color: transparent;
   color: #fff;
-  height: 70px;
+  height: 5rem;
 }
 
 .navbar ul {
   display: flex;
 }
 
-.navbar a {
+nav a {
   color: #fff;
-  padding: 10px;
-  margin: 0 15px;
+  margin: 0 2rem;
 }
 
-.navbar a:hover {
+nav a:hover {
   color: rgb(167, 167, 167);
 }
 
@@ -25,8 +23,7 @@
 }
 
 .drum {
-  margin: 0 10px;
-  font-size: 25px;
+  margin: 0 1rem;
 }
 /* ---------------------------------------------------------------- */
 
