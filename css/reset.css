@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
   /* ------------------------- Basic Resets ----------------------- */
   * {
     box-sizing: border-box;
@@ -40,7 +41,7 @@
 
   /* ------------------------- Layout Elements ----------------------- */
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -79,7 +80,7 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 150px 0;
+    padding: 10rem 0;
   }
   /* ---------------------------------------------------------------- */
 

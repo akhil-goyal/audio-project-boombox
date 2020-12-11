@@ -47,12 +47,12 @@ nav a:hover {
 }
 
 .hero-text h1 {
-  font-size: 120px;
+  font-size: 8rem;
   font-weight: bolder;
 }
 
 .hero-text h5 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 /* ---------------------------------------------------------------- */
@@ -60,6 +60,14 @@ nav a:hover {
 
 
 /* ---------------------------- Services --------------------------- */
+.section-our-services {
+  margin-top: 3rem;
+}
+
+.section-our-services .grid {
+  gap: 2rem;
+}
+
 .service-1 {
   background: linear-gradient(
     rgba(0, 0, 0, 0.600), 
@@ -92,6 +100,9 @@ nav a:hover {
 /* ---------------------------------------------------------------- */
 
 /* --------------------------- Utilities -------------------------- */
+.section-utilities {
+  margin-top: 3rem;
+}
 
 /* Songs List */
 .song-container {
@@ -110,13 +121,52 @@ nav a:hover {
 }
 
 .utilities .flex {
-  justify-content: space-evenly;
+  justify-content: flex-end;
+}
+
+.songs-playlist-graphics {
+  border: solid 3px black;
+  border-radius: 20px; 
+  height: 51.5rem;
+}
+
+.songs-playlist-graphics h3 {
+  font-size: 4rem; 
+  font-family: 'Dancing Script', cursive;
+}
+
+.songs-playlist-graphics img {
+  height: 30rem;
+}
+
+.songs-playlist {
+  height: 51.5rem;
+  border: 2px solid lightgray; 
+  border-radius: 20px;
+}
+
+.songs-playlist h3 {
+  margin-top: 1rem;
+}
+
+.scrollable-list {
+  margin-top: 1rem; 
+  height: 46.5rem; 
+  overflow: scroll;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none;
 }
 
 .song-thumbnail {
   height: 80px; 
   width: 80px; 
   border-radius: 40px;
+}
+
+.play-button {
+  margin: 0 0.5rem;
 }
 
 .play-bar {
@@ -128,8 +178,32 @@ nav a:hover {
 }
 
 /* Voice Recorder */
+.vocals-box {
+  height: 53rem; 
+  border: 2px solid lightgray; 
+  border-radius: 20px;
+}
+
 .vocals-box .grid {
+  height: 48.7rem;
   gap: 0px;
+}
+.vocals-box h3 {
+  margin-top: 1rem;
+}
+
+.voice-recorder-graphics {
+  border: solid 3px black; 
+  border-radius: 20px;
+}
+
+.voice-recorder-graphics h3 {
+  font-size: 4rem; 
+  font-family: 'Dancing Script', cursive;
+}
+
+.voice-recorder-graphics img {
+  height: 38rem;
 }
 
 .microphone {
@@ -142,10 +216,13 @@ nav a:hover {
 }
 
 .waveforms {
+  border: 1px solid purple;
+  border-radius: 0.5rem;
   grid-column: 1 / span 2;
   height: 5rem; 
   width: 34.3rem; 
   text-align: center; 
+  margin: 0 auto;
 }
 
 .record-icon {
@@ -155,8 +232,24 @@ nav a:hover {
 }
 
 /* Instruments */
-.division-instruments {
+.music-intruments-graphics {
+  border: solid 3px black; 
+  border-radius: 20px;
+}
+
+.music-intruments-graphics h3 {
+  font-size: 4rem; 
+  font-family: 'Dancing Script', cursive;
+}
+
+.play-instruments {
   padding: 0px 50px;
+  border: 2px solid lightgray; 
+  border-radius: 20px;
+}
+
+.play-instruments h3 {
+  margin-top: 1rem;
 }
 
 .instrument-1 {
@@ -218,6 +311,7 @@ footer {
   color: #fff;
   position: fixed;
   bottom: 0;
+  display: none;
 }
 
 .section-playbar .flex {
