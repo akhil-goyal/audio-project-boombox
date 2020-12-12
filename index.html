@@ -346,7 +346,50 @@
                         <div class="grid">
 
                             <div class="microphone m-1">
+
                                 <img src="/resources/img/mic.png">
+
+                                <svg id="waves">
+
+                                    <g stroke="#b8b8b8" strokewidth="1px" fill="transparent">
+                                        <circle cx="50%" cy="50%" r="100">
+                                            <animate attributeType="CSS" attributeName="opacity" from="0" to="1"
+                                                dur="2s" repeatCount="indefinite" />
+                                            <animate attributeType="CSS" attributeName="r" from="100" to="199.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="200">
+                                            <animate attributeType="CSS" attributeName="r" from="200" to="299.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="300">
+                                            <animate attributeType="CSS" attributeName="r" from="300" to="399.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="400">
+                                            <animate attributeType="CSS" attributeName="r" from="400" to="499.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="500">
+                                            <animate attributeType="CSS" attributeName="r" from="500" to="599.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="600">
+                                            <animate attributeType="CSS" attributeName="opacity" from="1" to=".5"
+                                                dur="2s" repeatCount="indefinite" />
+                                            <animate attributeType="CSS" attributeName="r" from="600" to="699.8"
+                                                dur="2s" repeatCount="indefinite" />
+                                        </circle>
+                                        <circle cx="50%" cy="50%" r="700">
+                                            <animate attributeType="CSS" attributeName="opacity" from=".5" to="0"
+                                                dur="2s" repeatCount="indefinite" />
+                                            <animate attributeType="CSS" attributeName="r" from="700" to="800" dur="2s"
+                                                repeatCount="indefinite" />
+                                        </circle>
+                                    </g>
+
+                                </svg>
+
                             </div>
 
                             <div class="waveforms">
@@ -355,12 +398,12 @@
 
                             <div>
                                 <img class="record-icon" src="/resources/img/record.png">
-                                <h4>Record Button</h4>
+                                <h4>Record</h4>
                             </div>
 
                             <div>
                                 <img class="record-icon" src="/resources/img/stop.png">
-                                <h4>Stop Button</h4>
+                                <h4>Stop</h4>
                             </div>
 
                         </div>
@@ -397,8 +440,10 @@
 
                         <div class="my-2 grid grid-1">
 
-                            <div class="card instrument-1">
-                                <h3>Delve into the melody of a piano.</h3>
+                            <div class="instrument-1">
+                                <iframe width="480" height="315"
+                                    src="https://www.youtube.com/embed/AEMgNMNeBr4?autoplay=1&mute=1">
+                                </iframe>
                             </div>
 
                             <div class="button-play-piano">
@@ -409,11 +454,13 @@
                                 </a>
                             </div>
 
-                            <div class="card instrument-2">
-                                <h3>Rock the floor with some amazing beats.</h3>
+                            <div class="instrument-2">
+                                <iframe width="480" height="315"
+                                    src="https://www.youtube.com/embed/HKXqWVWjs-g?autoplay=1&mute=1">
+                                </iframe>
                             </div>
 
-                            <div class="button-play-piano">
+                            <div class="button-play-drumkit">
                                 <a href="#open-drumkit">
                                     <div>
                                         <h4 class="text-center">Play Drumkit</h4>
@@ -432,7 +479,7 @@
 
         <!-- Partners Section -->
 
-        <section id="section-our-partners" class="my-4">
+        <section id="section-our-partners" class="section-our-partners my-4">
 
             <div class="container">
 
@@ -507,13 +554,17 @@
         <div class="grid text-center">
 
             <div class="piano-button-close">
-                <a title="Close" href="#play-instruments">
-                    <p>&#10005;</p>
-                </a>
-            </div>
 
-            <div class="piano-main-text">
-                <h3 class="md-text">Super Piano</h3>
+                <div class="piano-modal-heading">
+                    <h3 class="md-text">Super Piano</h3>
+                </div>
+
+                <div>
+                    <a title="Close" href="#play-instruments">
+                        <p>&#10005;</p>
+                    </a>
+                </div>
+
             </div>
 
             <div class="piano-player">
@@ -544,13 +595,17 @@
         <div class="grid text-center">
 
             <div class="drumkit-button-close">
-                <a title="Close" href="#play-instruments">
-                    <p>&#10005;</p>
-                </a>
-            </div>
 
-            <div class="drumkit-main-text">
-                <h3 class="md-text">Super Drumkit</h3>
+                <div class="drumkit-modal-heading">
+                    <h3 class="md-text">Super Drumkit</h3>
+                </div>
+
+                <div>
+                    <a title="Close" href="#play-instruments">
+                        <p>&#10005;</p>
+                    </a>
+                </div>
+
             </div>
 
             <div class="drumkit-player">

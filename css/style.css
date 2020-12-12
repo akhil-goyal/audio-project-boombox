@@ -41,6 +41,19 @@ nav a:hover {
   color: #fff;
 }
 
+/* .section-hero::before,
+.section-hero::after {
+  content: '';
+  position: absolute;
+  height: 150px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+} */
+
 .hero-text {
   padding: 20rem 0;
   text-align: center;
@@ -116,10 +129,13 @@ nav a:hover {
 
 /* Songs List */
 .song-container {
-  background-color: rgb(0, 0, 0);
   color: #fff;
   border-radius: 20px;
   margin: 0.1rem 0;
+  background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 
 .song-container .grid {
@@ -130,16 +146,12 @@ nav a:hover {
   margin-right: auto;
 }
 
-/* .utilities .grid {
-  background-color: rebeccapurple;
-} */
-
 .utilities .flex {
   justify-content: flex-end;
 }
 
 .songs-playlist-graphics {
-  border: solid 3px black;
+  border: solid 5px rgb(0, 0, 0);
   border-radius: 20px; 
   height: 51.5rem;
 }
@@ -154,9 +166,10 @@ nav a:hover {
 }
 
 .songs-playlist {
-  height: 51.5rem;
+  height: 51.7rem;
   border: 2px solid lightgray; 
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .songs-playlist h3 {
@@ -194,7 +207,7 @@ nav a:hover {
 /* Voice Recorder */
 .vocals-box {
   height: 53rem; 
-  border: 2px solid lightgray; 
+  border: 2px solid rgb(201, 201, 201); 
   border-radius: 20px;
 }
 
@@ -207,7 +220,7 @@ nav a:hover {
 }
 
 .voice-recorder-graphics {
-  border: solid 3px black; 
+  border: solid 5px rgb(0, 0, 0);
   border-radius: 20px;
 }
 
@@ -227,6 +240,15 @@ nav a:hover {
 .microphone img {
   height: 30rem;
   width: 25rem;
+  position: absolute;
+  margin-left: 6rem;
+}
+
+svg {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  bottom: 4rem;
 }
 
 .waveforms {
@@ -240,14 +262,14 @@ nav a:hover {
 }
 
 .record-icon {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Instruments */
 .music-intruments-graphics {
-  border: solid 3px black; 
+  border: solid 5px rgb(0, 0, 0);
   border-radius: 20px;
 }
 
@@ -257,7 +279,7 @@ nav a:hover {
 }
 
 .play-instruments {
-  padding: 0px 50px;
+  padding: 0px 80px;
   border: 2px solid lightgray; 
   border-radius: 20px;
 }
@@ -267,23 +289,39 @@ nav a:hover {
 }
 
 .instrument-1 {
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0.300), 
     rgba(0, 0, 0, 0.300)
-  ),url(/resources/img/piano.jpg);
+  ),url(/resources/img/piano.jpg); */
   background-size: cover;
   background-position: center;
   color: #fff;
+
+  display: block;
+  overflow: hidden;
+  width: 480px;
+  height: 315px;
+  border-radius: 30px;
+  transform: translateZ(0px);
+  border: 3px solid #eee;
 }
 
 .instrument-2 {
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0.300), 
     rgba(0, 0, 0, 0.300)
-  ),url(/resources/img/drum.jpg);
+  ),url(/resources/img/drum.jpg); */
   background-size: cover;
   background-position: center;
   color: #fff;
+
+  display: block;
+  overflow: hidden;
+  width: 480px;
+  height: 315px;
+  border-radius: 30px;
+  transform: translateZ(0px);
+  border: 3px solid #eee;
 }
 
 .button-play-piano {
@@ -291,7 +329,11 @@ nav a:hover {
 }
 
 .button-play-piano div {
-  height: 30px; width: 150px; border: 1px solid purple; border-radius: 1rem;
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: 1px solid purple; 
+  border-radius: 1rem;
 }
 
 .button-play-drumkit {
@@ -299,13 +341,17 @@ nav a:hover {
 }
 
 .button-play-drumkit div {
-  height: 30px; width: 150px; border: 1px solid purple; border-radius: 1rem;
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: 1px solid purple; 
+  border-radius: 1rem;
 }
 /* ---------------------------------------------------------------- */
 
 /* -------------------------- Our Partners ------------------------ */
 .partners-box {
-  background-color: #fff;
+  background-color: transparent;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -341,11 +387,51 @@ footer {
 .section-playbar {
   height: 6.5rem;
   width: 100%;
-  background-color:rgb(134, 47, 119);
   color: #fff;
   position: fixed;
   bottom: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 
 .section-playbar .flex {
   justify-content: space-evenly;
@@ -421,11 +507,11 @@ footer {
   margin: 10% auto;
   padding: 0 2rem;
   border-radius: 20px;
-  background: #fff;
+  background: rgb(179, 185, 219);
 }
 
 .piano-button-close,
-.piano-main-text,
+/* .piano-main-text, */
 .piano-player,
 .piano-play-button {
   grid-column: 1 / span 2;
@@ -435,8 +521,14 @@ footer {
   height: 15rem;
 }
 
-.piano-button-close a {
-  text-align: end;
+.piano-modal-heading {
+  padding: 0 28rem;
+}
+
+.piano-button-close {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .piano-button-close p {
@@ -483,7 +575,7 @@ footer {
   margin: 5% auto;
   padding: 20px;
   border-radius: 20px;
-  background: #fff;
+  background: rgb(228, 221, 189);
 }
 
 .drumkit-button-close,
@@ -501,6 +593,16 @@ footer {
   border: 1px solid #000;
   border-radius: 0.5rem;
   margin: 0 0.5rem;
+}
+
+.drumkit-modal-heading {
+  padding: 0 28rem;
+}
+
+.drumkit-button-close {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .drumkit-button-close a {
