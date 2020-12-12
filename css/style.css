@@ -476,11 +476,11 @@ footer {
 }
 
 .drumkit-modal > div {
-  height: 40rem;
+  height: 50rem;
   max-width: 1200px;
   width: 90%;
   position: relative;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 20px;
   border-radius: 20px;
   background: #fff;
@@ -509,4 +509,16 @@ footer {
 
 .drumkit-player img {
   width: 30%;
+}
+
+.drumkit-button-close p {
+  font-size: 1.5rem;
+}
+
+.drumkit-play-button div {
+  margin: 0 auto; 
+  height: 50px; 
+  width: 150px; 
+  border: 1px solid purple; 
+  border-radius: 1rem;
 }
