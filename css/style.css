@@ -379,46 +379,9 @@ footer {
   bottom: 0;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
 }
-
-@-webkit-keyframes Gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
 
 .section-playbar .flex {
   justify-content: space-evenly;
@@ -430,30 +393,31 @@ footer {
   border-radius: 2.5rem;
 }
 
-.section-playbar input {
-  width: 70rem;
-}
-
 .section-playbar i {
   font-size: 1rem;
   padding: 0 1.5rem;
+}
+
+.section-playbar input {
+  width: 70rem;
 }
 /* ---------------------------------------------------------------- */
 
 
 
+
 /* --------------------------- Top Button -------------------------- */
 .section-top-button div {
-  height: 50px; 
-  width: 50px; 
+  height: 3.5rem; 
+  width: 3.5rem; 
   background-color: rgb(122, 122, 122); 
   color: #fff; 
-  border-radius: 10px; 
+  border-radius: 0.5rem; 
   position: fixed; 
   bottom: 8rem; 
   right: 2rem;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .section-top-button p {
@@ -462,6 +426,11 @@ footer {
 /* ---------------------------------------------------------------- */
 
 
+
+
+/* ------------------------ Instrument Modals ---------------------- */
+
+/* Modal : Piano */
 .piano-modal {
   position: fixed;
   top: 0;
@@ -470,42 +439,46 @@ footer {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 100ms ease-in;
-  -moz-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  opacity: 0;
   pointer-events: none;
-}
-
-.piano-modal .grid {
-  gap: 0px;
+  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 100ms ease-in;
 }
 
 .piano-modal:target {
-  opacity:1;
+  opacity: 1;
   pointer-events: auto;
 }
 
 .piano-modal > div {
   height: 35rem;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 90%;
   position: relative;
   margin: 10% auto;
   padding: 0 2rem;
-  border-radius: 20px;
+  border-radius: 2rem;
   background: rgb(179, 185, 219);
 }
 
-.piano-button-close,
-/* .piano-main-text, */
+.piano-modal .grid {
+  gap: 0rem;
+}
+
+.piano-modal-header,
 .piano-player,
 .piano-play-button {
   grid-column: 1 / span 2;
 }
 
-.piano-player img {
-  height: 15rem;
+.piano-modal-header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.piano-modal-header p {
+  font-size: 1.5rem;
 }
 
 .piano-modal-heading {
@@ -517,21 +490,15 @@ footer {
   font-size: 3rem;
 }
 
-.piano-button-close {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.piano-button-close p {
-  font-size: 1.5rem;
+.piano-player img {
+  height: 15rem;
 }
 
 .piano-play-button div {
   margin: 0 auto; 
   height: 3rem; 
   width: 10rem; 
-  border: 1px solid purple; 
+  border: solid 0.1rem purple; 
   border-radius: 1rem;
 }
 
@@ -539,10 +506,7 @@ footer {
   cursor: pointer;
 }
 
-
-
-
-
+/* Modal : Drumkit */
 .drumkit-modal {
   position: fixed;
   top: 0;
@@ -551,15 +515,10 @@ footer {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 100ms ease-in;
-  -moz-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  opacity: 0;
   pointer-events: none;
-}
-
-.drumkit-modal .grid {
-  gap: 0px;
+  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 100ms ease-in;
 }
 
 .drumkit-modal:target {
@@ -578,22 +537,25 @@ footer {
   background: rgb(245, 227, 223);
 }
 
-.drumkit-button-close,
-.drumkit-main-text,
+.drumkit-modal .grid {
+  gap: 0px;
+}
+
+.drumkit-modal-header,
 .drumkit-player,
 .drumkit-keys,
 .drumkit-play-button {
   grid-column: 1 / span 2;
 }
 
-.drumkit-beat-container {
-  height: 6rem;
-  width: 6rem;
-  background: linear-gradient(0.65turn, #e4cc80, #ffa2a2);
-  border: 1px solid rgb(179, 179, 179);
-  border-radius: 0.5rem;
-  margin: 0 0.5rem;
+.drumkit-modal-header {
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
+}
+
+.drumkit-modal-header p {
+  font-size: 1.5rem;
 }
 
 .drumkit-modal-heading {
@@ -605,22 +567,18 @@ footer {
   font-size: 2.5rem;
 }
 
-.drumkit-button-close {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.drumkit-button-close a {
-  text-align: end;
-}
-
 .drumkit-player img {
   width: 30%;
 }
 
-.drumkit-button-close p {
-  font-size: 1.5rem;
+.drumkit-beat-container {
+  height: 6rem;
+  width: 6rem;
+  background: linear-gradient(0.65turn, #e4cc80, #ffa2a2);
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  padding: 1rem 0;
 }
 
 .drumkit-play-button div {
@@ -634,3 +592,33 @@ footer {
 .drumkit-controls a {
   cursor: pointer;
 }
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* --------------------------- Keyframes --------------------------- */
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+/* ---------------------------------------------------------------- */
