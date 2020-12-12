@@ -5,6 +5,10 @@
   height: 5rem;
 }
 
+.navbar .flex {
+  justify-content: space-between;
+}
+
 .navbar ul {
   display: flex;
 }
@@ -18,14 +22,11 @@ nav a:hover {
   color: rgb(167, 167, 167);
 }
 
-.navbar .flex {
-  justify-content: space-between;
-}
-
 .drum {
   margin: 0 1rem;
 }
 /* ---------------------------------------------------------------- */
+
 
 
 
@@ -40,19 +41,6 @@ nav a:hover {
   background-position: center;
   color: #fff;
 }
-
-/* .section-hero::before,
-.section-hero::after {
-  content: '';
-  position: absolute;
-  height: 150px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: #fff;
-  transform: skewY(-4deg);
-  -webkit-transform: skewY(-4deg);
-} */
 
 .hero-text {
   padding: 20rem 0;
@@ -69,6 +57,7 @@ nav a:hover {
   font-weight: bolder;
 }
 /* ---------------------------------------------------------------- */
+
 
 
 
