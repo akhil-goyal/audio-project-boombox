@@ -101,6 +101,9 @@ nav a:hover {
 }
 /* ---------------------------------------------------------------- */
 
+
+
+
 /* --------------------------- Utilities -------------------------- */
 .section-utilities {
   margin-top: 3rem;
@@ -116,32 +119,10 @@ nav a:hover {
   height: 100%;
 }
 
-/* Songs List */
-.song-container {
-  color: #fff;
-  border-radius: 20px;
-  margin: 0.1rem 0;
-  background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 5s ease infinite;
-  animation: Gradient 10s ease infinite;
-}
-
-.song-container .grid {
-  gap: 0px;
-}
-
-.song-controls {
-  margin-right: auto;
-}
-
-.utilities .flex {
-  justify-content: flex-end;
-}
-
+/* Songs List - Graphics */
 .songs-playlist-graphics {
-  border: solid 5px rgb(0, 0, 0);
-  border-radius: 20px; 
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
   height: 51.5rem;
 }
 
@@ -154,10 +135,11 @@ nav a:hover {
   height: 30rem;
 }
 
+/* Songs List - Playlist */
 .songs-playlist {
   height: 51.7rem;
-  border: 2px solid lightgray; 
-  border-radius: 20px;
+  border: solid 0.15rem lightgray; 
+  border-radius: 2rem;
   overflow: hidden;
 }
 
@@ -175,51 +157,56 @@ nav a:hover {
   display: none;
 }
 
+.song-container {
+  color: #fff;
+  border-radius: 2rem;
+  margin: 0.1rem 0;
+  background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+.song-container .grid {
+  gap: 0rem;
+}
+
 .song-thumbnail {
-  height: 80px; 
-  width: 80px; 
-  border-radius: 40px;
+  height: 5rem; 
+  width: 5rem; 
+  border-radius: 3rem;
+}
+
+.song-controls {
+  margin-right: auto;
+}
+
+.utilities .flex {
+  justify-content: flex-end;
 }
 
 .play-button {
   margin: 0 0.5rem;
 }
 
-.play-bar {
+.song-waverforms {
   grid-column: 1 / span 2;
 }
 
-.play-bar input {
-  width: 400px;
-}
-
-/* Voice Recorder */
+/* Voice Recorder - Recording Controls */
 .vocals-box {
   height: 53rem; 
-  border: 2px solid rgb(201, 201, 201); 
-  border-radius: 20px;
+  border: solid 0.15rem lightgray;  
+  border-radius: 2rem;
 }
 
 .vocals-box .grid {
   height: 48.7rem;
-  gap: 0px;
+  gap: 0rem;
 }
+
 .vocals-box h3 {
   margin-top: 1rem;
-}
-
-.voice-recorder-graphics {
-  border: solid 5px rgb(0, 0, 0);
-  border-radius: 20px;
-}
-
-.voice-recorder-graphics h3 {
-  font-size: 4rem; 
-  font-family: 'Dancing Script', cursive;
-}
-
-.voice-recorder-graphics img {
-  height: 38rem;
 }
 
 .microphone {
@@ -233,15 +220,15 @@ nav a:hover {
   margin-left: 6rem;
 }
 
-svg {
+.microphone svg {
   width: 100%;
-  height: 500px;
+  height: 32rem;
   position: relative;
   bottom: 4rem;
 }
 
 .waveforms {
-  border: 1px solid purple;
+  border: solid 0.1rem purple;
   border-radius: 0.5rem;
   grid-column: 1 / span 2;
   height: 5rem; 
@@ -253,13 +240,28 @@ svg {
 .record-icon {
   height: 3rem;
   width: 3rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Instruments */
+/* Voice Recorder - Graphics */
+.voice-recorder-graphics {
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
+}
+
+.voice-recorder-graphics h3 {
+  font-size: 4rem; 
+  font-family: 'Dancing Script', cursive;
+}
+
+.voice-recorder-graphics img {
+  height: 38rem;
+}
+
+/* Instruments - Graphics */
 .music-intruments-graphics {
-  border: solid 5px rgb(0, 0, 0);
-  border-radius: 20px;
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
 }
 
 .music-intruments-graphics h3 {
@@ -267,10 +269,11 @@ svg {
   font-family: 'Dancing Script', cursive;
 }
 
+/* Instruments - Play Instruments */
 .play-instruments {
-  padding: 0px 80px;
-  border: 2px solid lightgray; 
-  border-radius: 20px;
+  border: solid 0.15rem lightgray;  
+  border-radius: 2rem;
+  padding: 0 6rem;
 }
 
 .play-instruments h3 {
@@ -278,39 +281,16 @@ svg {
 }
 
 .instrument-1 {
-  /* background: linear-gradient(
-    rgba(0, 0, 0, 0.300), 
-    rgba(0, 0, 0, 0.300)
-  ),url(/resources/img/piano.jpg); */
   background-size: cover;
   background-position: center;
   color: #fff;
-
   display: block;
   overflow: hidden;
   width: 480px;
   height: 315px;
-  border-radius: 30px;
-  transform: translateZ(0px);
-  border: 3px solid #eee;
-}
-
-.instrument-2 {
-  /* background: linear-gradient(
-    rgba(0, 0, 0, 0.300), 
-    rgba(0, 0, 0, 0.300)
-  ),url(/resources/img/drum.jpg); */
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-
-  display: block;
-  overflow: hidden;
-  width: 480px;
-  height: 315px;
-  border-radius: 30px;
-  transform: translateZ(0px);
-  border: 3px solid #eee;
+  border-radius: 2rem;
+  transform: translateZ(0rem);
+  border: solid 0.1rem#eee;
 }
 
 .button-play-piano {
@@ -321,8 +301,21 @@ svg {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: 1px solid purple; 
+  border: solid 0.1rem purple; 
   border-radius: 1rem;
+}
+
+.instrument-2 {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  width: 480px;
+  height: 315px;
+  border-radius: 2rem;
+  transform: translateZ(0rem);
+  border: solid 0.1rem#eee;
 }
 
 .button-play-drumkit {
@@ -333,10 +326,13 @@ svg {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: 1px solid purple; 
+  border: solid 0.1rem purple; 
   border-radius: 1rem;
 }
 /* ---------------------------------------------------------------- */
+
+
+
 
 /* -------------------------- Our Partners ------------------------ */
 .partners-box {
@@ -358,6 +354,8 @@ svg {
   width: 60%;
 }
 /* ---------------------------------------------------------------- */
+
+
 
 
 /* ---------------------------- Footer ---------------------------- */
