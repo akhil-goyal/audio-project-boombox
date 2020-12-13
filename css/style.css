@@ -280,21 +280,13 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-.instrument-1 {
-  background-size: cover;
-  background-position: center;
-  color: var(--white-color);
-  display: block;
-  overflow: hidden;
-  width: 480px;
-  height: 315px;
-  border-radius: 2rem;
-  transform: translateZ(0rem);
-  border: solid 0.1rem#eee;
+.play-instruments img {
+  border-radius: 1rem;
 }
 
-.button-play-piano {
-  margin: 0 auto;
+.instrument-1,
+.instrument-2 {
+  border: solid 0.1rem#eee;
 }
 
 .button-play-piano div {
@@ -303,23 +295,6 @@ nav a:hover {
   padding: 0.1rem 0;
   border: solid 0.1rem var(--primary-color); 
   border-radius: 1rem;
-}
-
-.instrument-2 {
-  background-size: cover;
-  background-position: center;
-  color: var(--white-color);
-  display: block;
-  overflow: hidden;
-  width: 480px;
-  height: 315px;
-  border-radius: 2rem;
-  transform: translateZ(0rem);
-  border: solid 0.1rem#eee;
-}
-
-.button-play-drumkit {
-  margin: 0 auto;
 }
 
 .button-play-drumkit div {

@@ -166,6 +166,10 @@
   .my-5 {
     margin: 4rem 0;
   }
+
+  .my-auto{
+    margin: 0 auto;
+  }
   
   .m-1 {
     margin: 1rem;
