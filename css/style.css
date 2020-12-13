@@ -128,7 +128,7 @@ nav a:hover {
 
 .songs-playlist-graphics h3 {
   font-size: 4rem; 
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--cursive-font);
 }
 
 .songs-playlist-graphics img {
@@ -251,7 +251,7 @@ nav a:hover {
 
 .voice-recorder-graphics h3 {
   font-size: 4rem; 
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--cursive-font);
 }
 
 .voice-recorder-graphics img {
@@ -266,7 +266,7 @@ nav a:hover {
 
 .music-intruments-graphics h3 {
   font-size: 4rem; 
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--cursive-font);
 }
 
 /* Instruments - Play Instruments */

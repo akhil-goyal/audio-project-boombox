@@ -6,6 +6,16 @@
 
 
 
+  /* --------------------------- Fonts Used ------------------------- */
+  :root {
+    --main-font: 'Lato', sans-serif;
+    --cursive-font: 'Dancing Script', cursive;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+
   /* -------------------------- Colors Used ------------------------ */
   :root {
     --primary-color: #8a13b9;
@@ -29,7 +39,7 @@
   }
 
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font);
     color: var(--light-color);
     line-height: 1.6;
   }

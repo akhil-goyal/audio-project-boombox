@@ -114,7 +114,7 @@
   }
   
   .piano-modal-heading h3 {
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--cursive-font);
     font-size: 3rem;
   }
   
@@ -191,7 +191,7 @@
   }
   
   .drumkit-modal-heading h3 {
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--cursive-font);
     font-size: 2.5rem;
   }
   
