@@ -36,7 +36,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.171), 
     rgba(0, 0, 0, 0.171)
-  ),url(/resources/img/hero-image.jpg);
+  ),url(/resources/img/main/hero/hero-image.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -74,7 +74,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.600), 
     rgba(0, 0, 0, 0.600)
-  ),url(/resources/img/service-songs.jpg);
+  ),url(/resources/img/main/services/service-songs.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -84,7 +84,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.500), 
     rgba(0, 0, 0, 0.500)
-  ),url(/resources/img/service-vocals.jpg);
+  ),url(/resources/img/main/services/service-vocals.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -94,7 +94,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.400), 
     rgba(0, 0, 0, 0.400)
-  ),url(/resources/img/service-instruments.jpg);
+  ),url(/resources/img/main/services/service-instruments.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
