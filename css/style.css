@@ -1,7 +1,7 @@
 /* ----------------------------- Navbar --------------------------- */
 .navbar {
   background-color: transparent;
-  color: #fff;
+  color: var(--white-color);
   height: 5rem;
 }
 
@@ -14,7 +14,7 @@
 }
 
 nav a {
-  color: #fff;
+  color: var(--white-color);
   margin: 0 2rem;
 }
 
@@ -39,7 +39,7 @@ nav a:hover {
   ),url(/resources/img/hero-image.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .hero-text {
@@ -77,7 +77,7 @@ nav a:hover {
   ),url(/resources/img/service-songs.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .service-2 {
@@ -87,7 +87,7 @@ nav a:hover {
   ),url(/resources/img/service-vocals.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .service-3 {
@@ -97,7 +97,7 @@ nav a:hover {
   ),url(/resources/img/service-instruments.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
 }
 /* ---------------------------------------------------------------- */
 
@@ -138,7 +138,7 @@ nav a:hover {
 /* Songs List - Playlist */
 .songs-playlist {
   height: 51.7rem;
-  border: solid 0.15rem lightgray; 
+  border: solid 0.15rem var(--light-border); 
   border-radius: 2rem;
   overflow: hidden;
 }
@@ -158,7 +158,7 @@ nav a:hover {
 }
 
 .song-container {
-  color: #fff;
+  color: var(--white-color);
   border-radius: 2rem;
   margin: 0.1rem 0;
   background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
@@ -196,7 +196,7 @@ nav a:hover {
 /* Voice Recorder - Recording Controls */
 .vocals-box {
   height: 53rem; 
-  border: solid 0.15rem lightgray;  
+  border: solid 0.15rem var(--light-border);  
   border-radius: 2rem;
 }
 
@@ -228,7 +228,7 @@ nav a:hover {
 }
 
 .waveforms {
-  border: solid 0.1rem purple;
+  border: solid 0.1rem var(--primary-color);
   border-radius: 0.5rem;
   grid-column: 1 / span 2;
   height: 5rem; 
@@ -271,7 +271,7 @@ nav a:hover {
 
 /* Instruments - Play Instruments */
 .play-instruments {
-  border: solid 0.15rem lightgray;  
+  border: solid 0.15rem var(--light-border);  
   border-radius: 2rem;
   padding: 0 6rem;
 }
@@ -283,7 +283,7 @@ nav a:hover {
 .instrument-1 {
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
   display: block;
   overflow: hidden;
   width: 480px;
@@ -301,14 +301,14 @@ nav a:hover {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: solid 0.1rem purple; 
+  border: solid 0.1rem var(--primary-color); 
   border-radius: 1rem;
 }
 
 .instrument-2 {
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-color);
   display: block;
   overflow: hidden;
   width: 480px;
@@ -326,7 +326,7 @@ nav a:hover {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: solid 0.1rem purple; 
+  border: solid 0.1rem var(--primary-color); 
   border-radius: 1rem;
 }
 /* ---------------------------------------------------------------- */
@@ -337,7 +337,7 @@ nav a:hover {
 /* -------------------------- Our Partners ------------------------ */
 .partners-box {
   background-color: transparent;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   padding: 1rem 0;
 }
@@ -360,8 +360,8 @@ nav a:hover {
 
 /* ---------------------------- Footer ---------------------------- */
 footer {
-  background-color: #210654;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
   text-align: center;
   padding: 2.5rem 0;
   margin-bottom: 6.5rem;

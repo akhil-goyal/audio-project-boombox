@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  /* -------------------------- Fonts Used ------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  /* ---------------------------------------------------------------- */
+
+
+
+
+  /* -------------------------- Colors Used ------------------------ */
+  :root {
+    --primary-color: #8a13b9;
+    --secondary-color: #210654;
+    --dark-color: #000;
+    --light-color: #333;
+    --white-color: #fff;
+    --light-border: #d3d3d3;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
 
   /* ------------------------- Basic Resets ----------------------- */
   * {
@@ -11,7 +30,7 @@
 
   body {
     font-family: 'Lato', sans-serif;
-    color: #333;
+    color: var(--light-color);
     line-height: 1.6;
   }
 
@@ -78,13 +97,14 @@
   }
 
   .card {
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 10rem 0;
   }
   /* ---------------------------------------------------------------- */
+
 
 
 

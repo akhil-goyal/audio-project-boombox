@@ -2,7 +2,7 @@
 .section-playbar {
     height: 6.5rem;
     width: 100%;
-    color: #fff;
+    color: var(--white-color);
     position: fixed;
     bottom: 0;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
@@ -39,7 +39,7 @@
     height: 3.5rem; 
     width: 3.5rem; 
     background-color: rgb(122, 122, 122); 
-    color: #fff; 
+    color: var(--white-color); 
     border-radius: 0.5rem; 
     position: fixed; 
     bottom: 8rem; 
@@ -126,7 +126,7 @@
     margin: 0 auto; 
     height: 3rem; 
     width: 10rem; 
-    border: solid 0.1rem purple; 
+    border: solid 0.1rem var(--primary-color); 
     border-radius: 1rem;
   }
   
@@ -213,7 +213,7 @@
     margin: 0 auto; 
     height: 3rem; 
     width: 10rem; 
-    border: 1px solid purple; 
+    border: 1px solid var(--primary-color); 
     border-radius: 1rem;
   }
   
