@@ -172,6 +172,23 @@
     
     
     
+    /* ---------------------------- Footer ---------------------------- */
+    footer {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-bottom: 15.5rem;
+    }
+    
+    footer h4 {
+        font-size: 0.7rem;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
     /* ---------------------------- PLAYBAR --------------------------- */
     .section-playbar {
         height: auto !important;
@@ -186,6 +203,67 @@
     .section-playbar input {
         width: 90%;
         margin: 0 auto;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
+    /* ----------------------------- MODALS --------------------------- */
+    /* Piano */
+    .piano-modal-heading h3 {
+        width: max-content;
+    }
+    
+    /* Drumkit */
+    .grid-mobile-3 {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 1rem;
+    }
+    
+    .drumkit-modal > div {
+        height: 38rem;
+    }
+    
+    .drumkit-modal-heading h3 {
+        font-size: 2.2rem;
+        width: max-content;
+    }
+    
+    .drumkit-player img {
+        width: 35%;
+    }
+    
+    .drumkit-beat-container {
+        height: 4rem;
+        width: 4rem;
+        margin: 0 0.5rem;
+        padding: 1rem 0;
+    }
+    
+    .drumkit-beat-container h4 {
+        text-align: center;
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+    
+    .drumkit-beat-container h3 {
+        display: none;
+    }
+    
+    .drumkit-play-button div {
+        margin: 0 auto;
+        height: 2rem;
+        width: 6rem;
+        border: 1px solid var(--primary-color);
+        border-radius: 1rem;
+        padding: 0.2rem;
+    }
+    
+    .drumkit-play-button p {
+        margin: 0px;
     }
     /* ---------------------------------------------------------------- */
     
@@ -366,6 +444,23 @@
     
     
     
+    /* ---------------------------- Footer ---------------------------- */
+    footer {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-bottom: 15.5rem;
+    }
+    
+    footer h4 {
+        font-size: 0.8rem;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
     /* ---------------------------- PLAYBAR --------------------------- */
     .section-playbar {
         height: auto !important;
@@ -380,6 +475,44 @@
     .section-playbar input {
         width: 90%;
         margin: 0 auto;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
+    /* ----------------------------- MODALS --------------------------- */
+    /* Piano */
+    .piano-modal-heading h3 {
+        width: max-content;
+    }
+    
+    /* Drumkit */
+    .grid-mobile-3 {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 1rem;
+    }
+    
+    .drumkit-modal > div {
+        height: 48rem;
+    }
+    
+    .drumkit-modal-heading h3 {
+        width: max-content;
+    }
+    
+    .drumkit-player img {
+        width: 45%;
+    }
+    
+    .drumkit-beat-container h4 {
+        padding: 1rem;
+    }
+    
+    .drumkit-beat-container h3 {
+        display: none;
     }
     /* ---------------------------------------------------------------- */
     
@@ -539,6 +672,19 @@
     
     
     
+    /* ---------------------------- Footer ---------------------------- */
+    footer {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        text-align: center;
+        padding: 2.5rem 0;
+        margin-bottom: 15.5rem;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
     /* ---------------------------- PLAYBAR --------------------------- */
     .section-playbar {
         height: auto !important;
@@ -553,6 +699,44 @@
     .section-playbar input {
         width: 90%;
         margin: 0 auto;
+    }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
+    /* ----------------------------- MODALS --------------------------- */
+    /* Piano */
+    .piano-modal-heading h3 {
+        width: max-content;
+    }
+    
+    /* Drumkit */
+    .grid-mobile-3 {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 1rem;
+    }
+    
+    .drumkit-modal > div {
+        height: 59rem;
+    }
+    
+    .drumkit-modal-heading h3 {
+        width: max-content;
+    }
+    
+    .drumkit-player img {
+        width: 45%;
+    }
+    
+    .drumkit-beat-container h4 {
+        padding: 1rem;
+    }
+    
+    .drumkit-beat-container h3 {
+        display: none;
     }
     /* ---------------------------------------------------------------- */
     
