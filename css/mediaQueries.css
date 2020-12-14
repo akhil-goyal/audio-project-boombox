@@ -1,0 +1,122 @@
+/* Small devices (landscape phones, 575.98px and up) */
+@media (max-width: 575.98px) {
+
+/* ----------------------------- RESETS --------------------------- */
+.grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+.grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------- NAVBAR --------------------------- */
+.navbar {
+    height: auto;
+}
+
+.navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.navbar ul li {
+    padding: 1rem 0;
+}
+/* ---------------------------------------------------------------- */
+
+}
+    
+    
+/* Small devices (landscape phones, 375px to 430px) */
+@media (max-width: 430px) and (min-width: 375px) {
+
+/* ----------------------------- RESETS --------------------------- */
+.grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+.grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------- NAVBAR --------------------------- */
+.navbar {
+    height: auto;
+}
+
+.navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.navbar ul li {
+    padding: 1rem 0;
+}
+/* ---------------------------------------------------------------- */
+
+}
+    
+    
+    
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 769.98px) { 
+
+/* ----------------------------- RESETS --------------------------- */
+.grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+.grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------- NAVBAR --------------------------- */
+.navbar {
+    height: auto;
+}
+
+.navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.navbar ul li {
+    padding: 1rem 0;
+}
+/* ---------------------------------------------------------------- */
+
+}
