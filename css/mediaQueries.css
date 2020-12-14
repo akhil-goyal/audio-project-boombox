@@ -55,6 +55,111 @@
     }
     /* ---------------------------------------------------------------- */
     
+    
+    
+    
+    /* ----------------------------- UTILITIES ------------------------- */
+    .utilities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* Songs Play-List */
+    .songs-playlist-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .songs-playlist-graphics h3 {
+        font-size: 4rem; 
+    }
+    
+    .songs-playlist {
+        border-radius: 1rem;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .song-controls h4 {
+        font-size: 18px;
+    }
+    
+    .song-thumbnail {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 2rem;
+    }
+    
+    /* Microphone */
+    .vocals-box {
+        border-radius: 1rem;
+        height: auto;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .vocals-box .grid {
+        height: auto;
+    }
+    
+    .microphone {
+        height: 16rem;
+    }
+    
+    .microphone img {
+        height: 15rem;
+        width: 12.5rem;
+        margin: 0;
+        position: relative;
+    }
+    
+    .microphone svg {
+        width: 100%;
+        height: 16rem;
+        bottom: 17rem;
+        z-index: 999;
+    }
+    
+    .waveforms {
+        width: 90%;
+    }
+    
+    .record-icon-container {
+        padding: 2rem 0;
+    }
+    
+    
+    .voice-recorder-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .voice-recorder-graphics img {
+        height: auto;
+    }
+    
+    .voice-recorder-graphics h3 {
+        font-size: 3rem;
+    }
+    
+    /* Musical Instruments */
+    
+    .music-intruments-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .music-intruments-graphics h3 {
+        font-size: 2rem;
+    }
+    
+    .play-instruments {
+        width: 92%;
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+    
+    /* ---------------------------------------------------------------- */
+    
     }
       
       
@@ -113,6 +218,111 @@
         font-size: 1rem;
         font-weight: bolder;
     }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
+    /* ----------------------------- UTILITIES ------------------------- */
+    .utilities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* Songs Play-List */
+    .songs-playlist-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .songs-playlist-graphics h3 {
+        font-size: 4rem; 
+    }
+    
+    .songs-playlist {
+        border-radius: 1rem;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .song-controls h4 {
+        font-size: 18px;
+    }
+    
+    .song-thumbnail {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 2rem;
+    }
+    
+    /* Microphone */
+    .vocals-box {
+        border-radius: 1rem;
+        height: auto;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .vocals-box .grid {
+        height: auto;
+    }
+    
+    .microphone {
+        height: 16rem;
+    }
+    
+    .microphone img {
+        height: 15rem;
+        width: 12.5rem;
+        margin: 0;
+        position: relative;
+    }
+    
+    .microphone svg {
+        width: 100%;
+        height: 16rem;
+        bottom: 17rem;
+        z-index: 999;
+    }
+    
+    .waveforms {
+        width: 90%;
+    }
+    
+    .record-icon-container {
+        padding: 2rem 0;
+    }
+    
+    
+    .voice-recorder-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .voice-recorder-graphics img {
+        height: auto;
+    }
+    
+    .voice-recorder-graphics h3 {
+        font-size: 3rem;
+    }
+    
+    /* Musical Instruments */
+    
+    .music-intruments-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .music-intruments-graphics h3 {
+        font-size: 2rem;
+    }
+    
+    .play-instruments {
+        width: 92%;
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+    
     /* ---------------------------------------------------------------- */
     
     }
@@ -174,6 +384,89 @@
         font-size: 1rem;
         font-weight: bolder;
     }
+    /* ---------------------------------------------------------------- */
+    
+    
+    
+    
+    /* ----------------------------- UTILITIES ------------------------- */
+    .utilities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* Songs Play-List */
+    .songs-playlist-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .songs-playlist {
+        border-radius: 1rem;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    /* Microphone */
+    .vocals-box {
+        border-radius: 1rem;
+        height: auto;
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .vocals-box .grid {
+        height: auto;
+    }
+    
+    .microphone {
+        height: 16rem;
+    }
+    
+    .microphone img {
+        height: 15rem;
+        width: 12.5rem;
+        margin: 0;
+        position: relative;
+    }
+    
+    .microphone svg {
+        width: 100%;
+        height: 16rem;
+        bottom: 17rem;
+        z-index: 999;
+    }
+    
+    .waveforms {
+        width: 90%;
+    }
+    
+    .record-icon-container {
+        padding: 2rem 0;
+    }
+    
+    
+    .voice-recorder-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .voice-recorder-graphics img {
+        height: auto;
+    }
+    
+    /* Musical Instruments */
+    
+    .music-intruments-graphics {
+        width: 92%;
+        margin: 0 auto;
+    }
+    
+    .play-instruments {
+        width: 92%;
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+    
     /* ---------------------------------------------------------------- */
     
     }
