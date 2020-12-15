@@ -513,15 +513,21 @@
                 <h4 class="lead-text">Dark Horse</h4>
             </div>
 
+            <!-- <div class="buttons">
+                <button id="pre"><img src="rewind.png"></button>
+                <button id="play"><img id="play_img" src="play.png"></button>
+                <button id="next"><img src="fast-forward.png"></button>
+            </div> -->
+
             <div class="section-playbar-icons">
-                <i class="fas fa-backward"></i>
-                <i class="fas fa-play"></i>
+                <i id="playbar-button-previous" class="fas fa-backward"></i>
+                <i id="playbar-button-play" class="fas fa-play"></i>
                 <i class="fas fa-stop"></i>
-                <i class="fas fa-forward"></i>
+                <i id="playbar-button-next" class="fas fa-forward"></i>
             </div>
 
             <div>
-                <input min="0" max="2" step="0.01" type="range">
+                <input id="playbar-range" class="level" type="range" value="0" min="0">
             </div>
 
         </div>
@@ -677,7 +683,8 @@
     </div>
 
     <script type="module" src="js/script.js"></script>
-    <script type="module" src="js/microphone.js"></script>
+    <script src="js/microphone.js"></script>
+    <script src="js/musicPlayer.js" ></script>
 
 </body>
 

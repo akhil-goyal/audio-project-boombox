@@ -3,6 +3,16 @@ import { pianoNotes } from './pianoNotes.js';
 
 var svgFile = document.getElementById('svgObject').contentDocument;
 
+svgFile.addEventListener('click', (event) => {
+
+    let { id } = event.srcElement;
+
+    let audio = new Audio();
+    audio.src = pianoNotes[id].url;
+    audio.play();
+
+});
+
 document.addEventListener('click', (event) => {
 
     const { innerText } = event.target;
@@ -18,16 +28,6 @@ document.addEventListener('click', (event) => {
 
 });
 
-svgFile.addEventListener('click', (event) => {
-
-    let { id } = event.srcElement;
-
-    let audio = new Audio();
-    audio.src = pianoNotes[id].url;
-    audio.play();
-
-});
-
 window.addEventListener('keydown', (event) => {
 
     let { code } = event;
@@ -37,5 +37,3 @@ window.addEventListener('keydown', (event) => {
     audio.play();
 
 });
-
-
