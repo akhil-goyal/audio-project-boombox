@@ -706,11 +706,17 @@
     
     
     /* ----------------------------- MODALS --------------------------- */
+        
     /* Piano */
+
+    .piano-modal-heading {
+        padding: 0px 18rem;
+    }
+    
     .piano-modal-heading h3 {
         width: max-content;
     }
-    
+
     /* Drumkit */
     .grid-mobile-3 {
         display: grid !important;
