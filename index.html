@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/addons.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
-
 </head>
 
 <body>
@@ -24,8 +23,8 @@
             <div class="navbar">
                 <div class="container grid-mobile flex">
                     <a class="logo md-text"><i class="fas fa-drum drum md-text"></i>Boombox</a>
-                    <nav class="grid-mobile-3">
-                        <ul>
+                    <nav>
+                        <ul class="grid-mobile-3">
                             <li><a href="#section-our-services">Our Services</a></li>
                             <li><a href="#section-utilities">Utilities</a></li>
                             <li><a href="#section-our-partners">Our Partners</a></li>
@@ -95,7 +94,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -118,7 +118,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -141,7 +142,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -164,7 +166,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -187,7 +190,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -210,7 +214,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -233,7 +238,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -256,7 +262,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -279,7 +286,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -302,7 +310,8 @@
 
                                 <div class="song-container flex">
 
-                                    <img class="song-thumbnail m-1" src="/resources/img/main/services/service-vocals.jpg">
+                                    <img class="song-thumbnail m-1"
+                                        src="/resources/img/main/services/service-vocals.jpg">
 
                                     <div class="song-controls grid">
 
@@ -551,7 +560,9 @@
             </div>
 
             <div class="piano-player">
-                <img src="/resources/img/addons/pianokit.svg" alt="">
+                <object id="svgObject" data="/resources/img/addons/pianokit.svg" type="image/svg+xml" height="250"
+                    width="1000">
+                </object>
             </div>
 
             <div class="piano-play-button py-1">
@@ -599,47 +610,47 @@
 
                 <div class="flex grid-mobile-3 py-1">
 
-                    <div class="drumkit-beat-container">
+                    <div id="clap" class="drumkit-beat-container">
                         <h4>Clap</h4>
                         <h3>A</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="hihat" class="drumkit-beat-container">
                         <h4>Hihat</h4>
                         <h3>S</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="kick" class="drumkit-beat-container">
                         <h4>Kick</h4>
                         <h3>D</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="openhat" class="drumkit-beat-container">
                         <h4>Openhat</h4>
                         <h3>F</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="boom" class="drumkit-beat-container">
                         <h4>Boom</h4>
                         <h3>G</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="ride" class="drumkit-beat-container">
                         <h4>Ride</h4>
                         <h3>H</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="snare" class="drumkit-beat-container">
                         <h4>Snare</h4>
                         <h3>J</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="tom" class="drumkit-beat-container">
                         <h4>Tom</h4>
                         <h3>K</h3>
                     </div>
 
-                    <div class="drumkit-beat-container">
+                    <div id="tink" class="drumkit-beat-container">
                         <h4>Tink</h4>
                         <h3>L</h3>
                     </div>
@@ -665,7 +676,7 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 
 </body>
 
