@@ -501,33 +501,38 @@
     </footer>
 
     <!-- Fixed Music Playbar -->
-    <div class="section-playbar">
+    <div id="section-playbar" class="section-playbar">
 
         <div class="flex grid-mobile">
 
             <div>
-                <img src="/resources/img/main/services/service-vocals.jpg">
+                <img id="playbar-song-thumbnail" src="/resources/img/main/services/service-vocals.jpg">
             </div>
 
             <div>
-                <h4 class="lead-text">Dark Horse</h4>
+                <h4 id="playbar-song-title" class="lead-text">Soundtrack</h4><br><span>
+                    <p class="playbar-song-artist" id="playbar-song-artist">By Various</p>
+                </span>
             </div>
-
-            <!-- <div class="buttons">
-                <button id="pre"><img src="rewind.png"></button>
-                <button id="play"><img id="play_img" src="play.png"></button>
-                <button id="next"><img src="fast-forward.png"></button>
-            </div> -->
 
             <div class="section-playbar-icons">
                 <i id="playbar-button-previous" class="fas fa-backward"></i>
                 <i id="playbar-button-play" class="fas fa-play"></i>
-                <i class="fas fa-stop"></i>
+                <i id="playbar-button-stop" class="fas fa-stop"></i>
                 <i id="playbar-button-next" class="fas fa-forward"></i>
             </div>
 
-            <div>
-                <input id="playbar-range" class="level" type="range" value="0" min="0">
+            <div class="section-playbar-range">
+
+                <div>
+                    <input type="range" min="0" max="100" value="0" id="playbar-range">
+                </div>
+
+                <div class="playbar-time-stamps">
+                    <p id="playbar-current-time">Current Time</p>
+                    <p id="playbar-total-duration">Duration</p>
+                </div>
+
             </div>
 
         </div>
@@ -684,7 +689,7 @@
 
     <script type="module" src="js/script.js"></script>
     <script src="js/microphone.js"></script>
-    <script src="js/musicPlayer.js" ></script>
+    <script type="module" src="js/musicPlayer.js"></script>
 
 </body>
 

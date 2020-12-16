@@ -19,6 +19,12 @@
     height: 5rem;
     width: 5rem;
     border-radius: 2.5rem;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .section-playbar.play img {
+    animation-play-state: running;
   }
   
   .section-playbar i {
@@ -28,6 +34,27 @@
   
   .section-playbar input {
     width: 70rem;
+  }
+
+  .playbar-song-artist {
+    margin: -1rem 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-playbar-range .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 70rem;
+  }
+
+  .playbar-time-stamps{
+    display: flex;
+    justify-content: space-between;
   }
   /* ---------------------------------------------------------------- */
   
@@ -221,6 +248,16 @@
 
 
   /* --------------------------- Keyframes --------------------------- */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     @keyframes Gradient {
     0% {
         background-position: 0% 50%;
