@@ -31,6 +31,17 @@
     font-size: 1rem;
     padding: 0 1.5rem;
   }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+      background: rgb(129, 115, 253);
+      margin-top: -6px;
+  }
   
   .section-playbar input {
     width: 70rem;

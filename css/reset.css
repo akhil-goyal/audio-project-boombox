@@ -30,6 +30,34 @@
 
 
 
+   /* ------------------------- Scroll Bar ----------------------- */
+
+  /* Scrollbar Width */
+  ::-webkit-scrollbar {
+    width: 17px;
+  }
+
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(70, 42, 138); 
+    border-radius: 10px;
+  }
+
+  /* On hovering at Scrollbar */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(70, 42, 138); 
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+
   /* ------------------------- Basic Resets ----------------------- */
   * {
     box-sizing: border-box;

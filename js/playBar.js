@@ -117,38 +117,36 @@ buttonPrevious.addEventListener('click', () => {
 
 audioTrack.addEventListener('ended', () => {
     nextSong();
-})
+});
 
+audioTrack.addEventListener('loadeddata', (event) => {
+
+    const { duration } = event.target;
+
+    buttonSlider.max = duration;
+
+    totalDuration.innerHTML = (formatTime(Math.floor(duration)));
+
+})
 
 audioTrack.addEventListener('timeupdate', (event) => {
 
-    const { duration, currentTime } = event.target;
+    const { currentTime } = event.target;
 
-    buttonSlider.max = duration;
     buttonSlider.value = currentTime;
 
-    var h = Math.floor(currentTime / 3600);
-    var m = Math.floor(currentTime % 3600 / 60);
-    var s = Math.floor(currentTime % 3600 % 60);
-
-    var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
-    var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
-    var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
-
-    currentPosition.innerHTML = hDisplay + mDisplay + sDisplay;
-
-    var h = Math.floor(duration / 3600);
-    var m = Math.floor(duration % 3600 / 60);
-    var s = Math.floor(duration % 3600 % 60);
-
-    var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
-    var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
-    var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
-
-    totalDuration.innerHTML = hDisplay + mDisplay + sDisplay;
-
+    currentPosition.innerHTML = (formatTime(Math.floor(currentTime)));
 
 });
+
+function formatTime(seconds) {
+    let min = Math.floor((seconds / 60));
+    let sec = Math.floor(seconds - (min * 60));
+    if (sec < 10) {
+        sec = `0${sec}`;
+    };
+    return `${min}:${sec}`;
+};
 
 function toggleMute() {
 
