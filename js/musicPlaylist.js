@@ -1,11 +1,12 @@
 import { musicLibrary } from './songsList.js';
+import { loadSoundTrack, playSong } from './playBar.js';
 
 let listContainer = document.querySelector('.scrollable-list');
 let unorderedList = document.createElement('ul');
 
 listContainer.appendChild(unorderedList);
 
-musicLibrary.forEach((item) => {
+musicLibrary.map((item, index) => {
 
     let songContainer = document.createElement('div');
 
@@ -41,6 +42,11 @@ musicLibrary.forEach((item) => {
 
     songControls.appendChild(songTitle);
 
+    songTitle.addEventListener('click', () => {
+        loadSoundTrack(index);
+        playSong();
+    });
+
     /////
 
     let playIcon = document.createElement('p');
@@ -54,7 +60,8 @@ musicLibrary.forEach((item) => {
     songControls.appendChild(playIcon);
 
     playIcon.addEventListener('click', () => {
-        playMusic(item);
+        loadSoundTrack(index);
+        playSong();
     });
 
     /////
@@ -74,7 +81,3 @@ musicLibrary.forEach((item) => {
     waveformsContainer.appendChild(audioVisualizer);
 
 });
-
-function playMusic(song) {
-    console.log('Payload : ', song);
-}

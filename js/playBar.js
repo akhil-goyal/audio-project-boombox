@@ -173,3 +173,5 @@ buttonSlider.addEventListener('click', () => {
     audioTrack.currentTime = buttonSlider.value;
 
 });
+
+export { loadSoundTrack, playSong };
