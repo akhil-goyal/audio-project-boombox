@@ -360,6 +360,11 @@ nav a:hover {
 
 .partner-image {
   width: 60%;
+  transition: transform 0.4s ease-in;
+}
+
+.partner-image:hover{
+  transform: translateY(-15px);
 }
 /* ---------------------------------------------------------------- */
 
