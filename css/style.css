@@ -45,6 +45,8 @@ nav a:hover {
 .hero-text {
   padding: 20rem 0;
   text-align: center;
+  position: relative;
+  animation: bubbleFromTop 3s;
 }
 
 .hero-text h1 {
@@ -241,10 +243,11 @@ nav a:hover {
 .microphone-download-controls i {
   font-size: 2rem;
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .microphone-audio-controls p,
-.microphone-audio-controls a {
+.microphone-download-controls a {
   cursor: pointer;
 }
 
@@ -377,6 +380,38 @@ footer {
 
 
 /* --------------------------- Keyframes --------------------------- */
+@keyframes bubbleFromTop{
+    16%{
+      transform: translateY(-100%);
+      animation-timing-function: ease-in;
+    }
+
+    33% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+
+    50% {
+      transform: translateY(-20%);
+      animation-timing-function: ease-in;
+    }
+
+    66% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+
+    83% {
+      transform: translateY(-10%);
+      animation-timing-function: ease-in;
+    }
+
+    100% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+}
+
 @keyframes Gradient {
   0% {
       background-position: 0% 50%;
