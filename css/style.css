@@ -227,6 +227,36 @@ nav a:hover {
   bottom: 4rem;
 }
 
+.microphone-audio-controls {
+  display: flex;
+  grid-column: 1 / span 2; 
+  justify-content: space-evenly;
+}
+
+.microphone-download-controls {
+  grid-column: 1 / span 2;
+}
+
+.microphone-audio-controls i,
+.microphone-download-controls i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.microphone-audio-controls p,
+.microphone-audio-controls a {
+  cursor: pointer;
+}
+
+.icon-record.active{
+  color: rgb(197, 0, 0);
+}
+
+.button-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 .waveforms {
   border: solid 0.1rem var(--primary-color);
   border-radius: 0.5rem;

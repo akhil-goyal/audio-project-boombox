@@ -1,56 +1,71 @@
-let recordingStart = document.getElementById(`recording-start`);
-let recordingStop = document.getElementById(`recording-stop`);
+// let recordingStart = document.getElementById(`recording-start`);
+let buttonStart = document.querySelector('#microphone-record');
+let buttonStop = document.querySelector('#microphone-stop')
+let buttonPlay = document.querySelector('#microphone-play');
+let buttonDownload = document.querySelector('#microphone-download');
+
+let recordIcon = document.querySelector('.icon-record');
+let recordText = document.querySelector('#text-record');
 
 let loadRecorder = async () => {
 
     let chunks = [];
 
-    isRecording(false);
 
     let audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
     const voiceRecorder = new MediaRecorder(audioStream);
 
-    voiceRecorder.addEventListener("start", () => {
-        chunks = [];
-        isRecording(true);
-    })
+    buttonDownload.addEventListener('click', () => {
 
-    voiceRecorder.addEventListener("stop", () => {
+        const audioBlob = new Blob(chunks);
+        const audioUrl = URL.createObjectURL(audioBlob);
+
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+
+        a.href = audioUrl;
+        a.download = `${Math.floor(Math.random() * 10)}.wav`;
+        a.click();
+        window.URL.revokeObjectURL(audioUrl);
+
+    });
+
+    buttonPlay.addEventListener('click', () => {
 
         const audioBlob = new Blob(chunks);
         const audioUrl = URL.createObjectURL(audioBlob);
         const audio = new Audio(audioUrl);
         audio.play();
 
-        isRecording(false);
+    });
 
-    })
+    buttonStop.addEventListener(`click`, () => {
+
+        voiceRecorder.stop();
+
+        recordIcon.classList.remove('active');
+        buttonPlay.classList.remove('button-disabled');
+        buttonDownload.classList.remove('button-disabled');
+
+    });
 
     voiceRecorder.addEventListener("dataavailable", (event) => {
         chunks.push(event.data);
-    })
+    });
 
-    recordingStart.addEventListener(`click`, () => {
+    voiceRecorder.addEventListener("start", () => {
+        chunks = [];
+    });
+
+    buttonStart.addEventListener(`click`, () => {
         voiceRecorder.start();
-    })
 
-    recordingStop.addEventListener(`click`, () => {
-        voiceRecorder.stop();
-    })
-}
+        recordIcon.classList.add('active');
+        buttonStop.classList.remove('button-disabled');
 
-let isRecording = (isRecording) => {
-
-    recordingStart.disabled = isRecording;
-    recordingStop.disabled = !isRecording;
-
-    // Border around the body
-    if (isRecording) {
-        document.body.classList.add(`recording`);
-    } else {
-        document.body.classList.remove(`recording`);
-    }
+    });
 }
 
 window.addEventListener(`load`, loadRecorder);
