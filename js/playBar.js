@@ -1,4 +1,4 @@
-import { musicLibrary } from './songsList.js';
+import { musicLibrary } from './sounds/songsList.js';
 
 let playBar = document.querySelector('#section-playbar');
 let buttonPlay = document.querySelector('#playbar-button-play');

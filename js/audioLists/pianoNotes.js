@@ -1,4 +1,4 @@
-const BASE_URL = '/resources/audio/piano-kit';
+const BASE_URL = './resources/audio/piano-kit';
 
 export const pianoNotes = {
     'D4-key': { url: `${BASE_URL}/D4.mp3` },

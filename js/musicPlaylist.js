@@ -1,4 +1,4 @@
-import { musicLibrary } from './songsList.js';
+import { musicLibrary } from './sounds/songsList.js';
 import { loadSoundTrack, playSong } from './playBar.js';
 
 let listContainer = document.querySelector('.scrollable-list');

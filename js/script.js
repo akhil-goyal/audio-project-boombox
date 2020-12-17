@@ -1,5 +1,5 @@
-import { drumBeats } from './drumBeats.js';
-import { pianoNotes } from './pianoNotes.js';
+import { drumBeats } from './sounds/drumBeats.js';
+import { pianoNotes } from './sounds/pianoNotes.js';
 
 var svgFile = document.getElementById('svgObject').contentDocument;
 

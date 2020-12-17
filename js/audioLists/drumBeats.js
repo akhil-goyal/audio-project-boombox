@@ -1,4 +1,4 @@
-const BASE_URL = '/resources/audio/drum-kit';
+const BASE_URL = './resources/audio/drum-kit';
 
 export const drumBeats = {
     'KeyA': { beat: 'Clap', url: `${BASE_URL}/clap.wav` },
