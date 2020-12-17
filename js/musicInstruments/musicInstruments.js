@@ -1,15 +1,12 @@
-import { drumBeats } from './../audioLists/drumBeats.js';
-import { pianoNotes } from './../audioLists/pianoNotes.js';
+import { playPiano, drumkitOnClick, drumkitOnKeypress } from './functions/instrumentFunctions.js';
 
-var svgFile = document.getElementById('svgObject').contentDocument;
+var pianoSvg = document.getElementById('svgObject').contentDocument;
 
-svgFile.addEventListener('click', (event) => {
+pianoSvg.addEventListener('click', (event) => {
 
     let { id } = event.srcElement;
 
-    let audio = new Audio();
-    audio.src = pianoNotes[id].url;
-    audio.play();
+    playPiano(id);
 
 });
 
@@ -17,14 +14,7 @@ document.addEventListener('click', (event) => {
 
     const { innerText } = event.target;
 
-    for (let key in drumBeats) {
-
-        if (innerText === drumBeats[key].beat) {
-            let audio = new Audio();
-            audio.src = drumBeats[key].url;
-            audio.play();
-        }
-    }
+    drumkitOnClick(innerText);
 
 });
 
@@ -32,8 +22,6 @@ window.addEventListener('keydown', (event) => {
 
     let { code } = event;
 
-    let audio = new Audio();
-    audio.src = drumBeats[code].url;
-    audio.play();
+    drumkitOnKeypress(code);
 
 });
