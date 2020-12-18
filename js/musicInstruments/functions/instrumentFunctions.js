@@ -4,6 +4,8 @@ import { drumBeats } from './../../audioLists/drumBeats.js';
 let playPiano = (id) => {
 
     let audio = new Audio();
+
+    audio.load();
     audio.src = pianoNotes[id].url;
     audio.play();
 
@@ -17,11 +19,11 @@ let drumkitOnKeypress = (code) => {
 
 }
 
-let drumkitOnClick = (innerText) => {
+let drumkitOnClick = (id) => {
 
     for (let key in drumBeats) {
 
-        if (innerText === drumBeats[key].beat) {
+        if (id === (drumBeats[key].beat).toLowerCase()) {
             let audio = new Audio();
             audio.src = drumBeats[key].url;
             audio.play();

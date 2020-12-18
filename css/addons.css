@@ -245,7 +245,15 @@
     transition: transform 0.2s ease-in;
   }
 
+  .drumkit-beat-container h3,h4 {
+    pointer-events: none;
+  }
+
   .drumkit-beat-container:hover{
+    transform: translateY(-15px);
+  }
+
+  .drumkit-beat-container.active{
     transform: translateY(-15px);
   }
   

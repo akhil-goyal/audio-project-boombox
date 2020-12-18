@@ -1,6 +1,6 @@
 import { playPiano, drumkitOnClick, drumkitOnKeypress } from './functions/instrumentFunctions.js';
 
-var pianoSvg = document.getElementById('svgObject').contentDocument;
+let pianoSvg = document.getElementById('svgObject').contentDocument;
 
 pianoSvg.addEventListener('click', (event) => {
 
@@ -12,9 +12,9 @@ pianoSvg.addEventListener('click', (event) => {
 
 document.addEventListener('click', (event) => {
 
-    const { innerText } = event.target;
+    const { id } = event.target;
 
-    drumkitOnClick(innerText);
+    drumkitOnClick(id);
 
 });
 

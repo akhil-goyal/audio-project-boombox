@@ -441,3 +441,31 @@ footer {
   }
 }
 /* ---------------------------------------------------------------- */
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader h1{
+  color: #fff;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+      opacity: 1;
+      visibility: hidden;
+  }
+}

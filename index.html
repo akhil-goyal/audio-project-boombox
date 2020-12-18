@@ -15,172 +15,179 @@
 </head>
 
 <body>
-    <main>
 
-        <!-- Hero Section -->
-        <section id="section-hero" class="section-hero">
+    <div class="loader hidden">
+        <h1 class="xl-text">Loading ...</h1>
+    </div>
 
-            <div class="navbar">
-                <div class="container grid-mobile flex">
-                    <a class="logo md-text"><i class="fas fa-drum drum md-text"></i>Boombox</a>
-                    <nav>
-                        <ul class="grid-mobile-3">
-                            <li><a href="#section-our-services">Our Services</a></li>
-                            <li><a href="#section-utilities">Utilities</a></li>
-                            <li><a href="#section-our-partners">Our Partners</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+    <div class="homepage">
 
-            <div class="container hero-text">
-                <h1>Boombox</h1>
-                <h5>Your one stop spot for music.</h5>
-            </div>
-        </section>
+        <main>
 
-        <!-- Services Section -->
-        <section id="section-our-services" class="section-our-services">
-            <div class="container">
-                <h2 class="text-center lg-text my-2">Our Services</h2>
-                <div class="grid grid-3">
-                    <div class="service-1 card">
-                        <h3>Listen to the latest music.</h3>
-                    </div>
-                    <div class="service-2 card">
-                        <h3>Record your own songs.</h3>
-                    </div>
-                    <div class="service-3 card">
-                        <h3>Enjoy playing various instruments.</h3>
+            <!-- Hero Section -->
+            <section id="section-hero" class="section-hero">
+
+                <div class="navbar">
+                    <div class="container grid-mobile flex">
+                        <a class="logo md-text"><i class="fas fa-drum drum md-text"></i>Boombox</a>
+                        <nav>
+                            <ul class="grid-mobile-3">
+                                <li><a href="#section-our-services">Our Services</a></li>
+                                <li><a href="#section-utilities">Utilities</a></li>
+                                <li><a href="#section-our-partners">Our Partners</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Utilities Section -->
-        <section id="section-utilities" class="section-utilities">
+                <div class="container hero-text">
+                    <h1>Boombox</h1>
+                    <h5>Your one stop spot for music.</h5>
+                </div>
+            </section>
 
-            <div class="container">
+            <!-- Services Section -->
+            <section id="section-our-services" class="section-our-services">
+                <div class="container">
+                    <h2 class="text-center lg-text my-2">Our Services</h2>
+                    <div class="grid grid-3">
+                        <div class="service-1 card">
+                            <h3>Listen to the latest music.</h3>
+                        </div>
+                        <div class="service-2 card">
+                            <h3>Record your own songs.</h3>
+                        </div>
+                        <div class="service-3 card">
+                            <h3>Enjoy playing various instruments.</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <h2 class="text-center lg-text my-2">Utilities</h2>
+            <!-- Utilities Section -->
+            <section id="section-utilities" class="section-utilities">
 
-                <div class="utilities">
+                <div class="container">
 
-                    <div class="songs-playlist-graphics">
+                    <h2 class="text-center lg-text my-2">Utilities</h2>
 
-                        <div class="grid grid-1">
+                    <div class="utilities">
+
+                        <div class="songs-playlist-graphics">
+
+                            <div class="grid grid-1">
+
+                                <div>
+                                    <h3 class="text-center md-text">Feel the beat,<br /> feel the thunder.</h3>
+                                </div>
+
+                                <div>
+                                    <img src="resources/img/main/utilities/graphic1.svg" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="songs-playlist">
 
                             <div>
-                                <h3 class="text-center md-text">Feel the beat,<br /> feel the thunder.</h3>
+                                <h3 class="text-center md-text">Songs Playlist</h3>
                             </div>
+
+                            <div class="scrollable-list">
+
+                            </div>
+
+                        </div>
+
+                        <div class="vocals-box text-center">
 
                             <div>
-                                <img src="/resources/img/main/utilities/graphic1.svg" alt="">
+                                <h3 class="md-text">Record Vocals</h3>
                             </div>
 
-                        </div>
+                            <div class="grid">
 
-                    </div>
+                                <div class="microphone m-1">
 
-                    <div class="songs-playlist">
+                                    <img src="resources/img/main/utilities/microphone.png">
 
-                        <div>
-                            <h3 class="text-center md-text">Songs Playlist</h3>
-                        </div>
+                                    <svg id="microphone-waves">
 
-                        <div class="scrollable-list">
+                                        <g stroke="#b8b8b8" strokewidth="1px" fill="transparent">
+                                            <circle cx="50%" cy="50%" r="100">
+                                                <animate attributeType="CSS" attributeName="opacity" from="0" to="1"
+                                                    dur="2s" repeatCount="indefinite" />
+                                                <animate attributeType="CSS" attributeName="r" from="100" to="199.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="200">
+                                                <animate attributeType="CSS" attributeName="r" from="200" to="299.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="300">
+                                                <animate attributeType="CSS" attributeName="r" from="300" to="399.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="400">
+                                                <animate attributeType="CSS" attributeName="r" from="400" to="499.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="500">
+                                                <animate attributeType="CSS" attributeName="r" from="500" to="599.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="600">
+                                                <animate attributeType="CSS" attributeName="opacity" from="1" to=".5"
+                                                    dur="2s" repeatCount="indefinite" />
+                                                <animate attributeType="CSS" attributeName="r" from="600" to="699.8"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            <circle cx="50%" cy="50%" r="700">
+                                                <animate attributeType="CSS" attributeName="opacity" from=".5" to="0"
+                                                    dur="2s" repeatCount="indefinite" />
+                                                <animate attributeType="CSS" attributeName="r" from="700" to="800"
+                                                    dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                        </g>
 
-                        </div>
+                                    </svg>
 
-                    </div>
-
-                    <div class="vocals-box text-center">
-
-                        <div>
-                            <h3 class="md-text">Record Vocals</h3>
-                        </div>
-
-                        <div class="grid">
-
-                            <div class="microphone m-1">
-
-                                <img src="/resources/img/main/utilities/microphone.png">
-
-                                <svg id="microphone-waves">
-
-                                    <g stroke="#b8b8b8" strokewidth="1px" fill="transparent">
-                                        <circle cx="50%" cy="50%" r="100">
-                                            <animate attributeType="CSS" attributeName="opacity" from="0" to="1"
-                                                dur="2s" repeatCount="indefinite" />
-                                            <animate attributeType="CSS" attributeName="r" from="100" to="199.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="200">
-                                            <animate attributeType="CSS" attributeName="r" from="200" to="299.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="300">
-                                            <animate attributeType="CSS" attributeName="r" from="300" to="399.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="400">
-                                            <animate attributeType="CSS" attributeName="r" from="400" to="499.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="500">
-                                            <animate attributeType="CSS" attributeName="r" from="500" to="599.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="600">
-                                            <animate attributeType="CSS" attributeName="opacity" from="1" to=".5"
-                                                dur="2s" repeatCount="indefinite" />
-                                            <animate attributeType="CSS" attributeName="r" from="600" to="699.8"
-                                                dur="2s" repeatCount="indefinite" />
-                                        </circle>
-                                        <circle cx="50%" cy="50%" r="700">
-                                            <animate attributeType="CSS" attributeName="opacity" from=".5" to="0"
-                                                dur="2s" repeatCount="indefinite" />
-                                            <animate attributeType="CSS" attributeName="r" from="700" to="800" dur="2s"
-                                                repeatCount="indefinite" />
-                                        </circle>
-                                    </g>
-
-                                </svg>
-
-                            </div>
-
-                            <div class="microphone-audio-controls">
-
-                                <div id="microphone-record">
-                                    <i class="icon-record fas fa-microphone"></i>
-                                    <p>Record</p>
                                 </div>
 
-                                <div class="button-disabled" id="microphone-stop">
-                                    <i class="icon-stop fas fa-stop"></i>
-                                    <p>Stop</p>
+                                <div class="microphone-audio-controls">
+
+                                    <div id="microphone-record">
+                                        <i class="icon-record fas fa-microphone"></i>
+                                        <p>Record</p>
+                                    </div>
+
+                                    <div class="button-disabled" id="microphone-stop">
+                                        <i class="icon-stop fas fa-stop"></i>
+                                        <p>Stop</p>
+                                    </div>
+
+                                    <div class="button-disabled" id="microphone-play">
+                                        <i class="icon-play fas fa-play"></i>
+                                        <p>Play</p>
+                                    </div>
+
                                 </div>
 
-                                <div class="button-disabled" id="microphone-play">
-                                    <i class="icon-play fas fa-play"></i>
-                                    <p>Play</p>
+                                <div class="microphone-download-controls">
+
+                                    <div class="button-disabled" id="microphone-download">
+                                        <a class="icon-download">Download</a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="microphone-download-controls">
-
-                                <div class="button-disabled" id="microphone-download">
-                                    <a class="icon-download">Download</a>
-                                </div>
-
-                            </div>
-
-                            <!-- <div class="waveforms">
+                                <!-- <div class="waveforms">
 
                             </div> -->
 
-                            <!-- <div id="recording-start" class="record-icon-container">
+                                <!-- <div id="recording-start" class="record-icon-container">
                                 <img class="record-icon" src="/resources/img/main/utilities/record.png">
                                 <h4>Record</h4>
                             </div>
@@ -195,270 +202,273 @@
                                 <h4>Play</h4>
                             </div> -->
 
-                            <!-- <div id="recording-download" class="record-icon-container">
+                                <!-- <div id="recording-download" class="record-icon-container">
                                 <img class="record-icon" src="/resources/img/main/utilities/stop.png">
                                 <h4>Download</h4>
                             </div> -->
 
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-1 voice-recorder-graphics">
+
+                            <div>
+                                <h3 class="text-center md-text">Record & roll the <br /> test text.</h3>
+                            </div>
+
+                            <div>
+                                <img src="resources/img/main/utilities/graphic2.svg" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-1 music-intruments-graphics">
+
+                            <div>
+                                <h3 class="text-center">I am a test <br /> for instruments.</h3>
+                            </div>
+
+                            <div>
+                                <img src="resources/img/main/utilities/graphic3.svg" alt="">
+                            </div>
+
+                        </div>
+
+                        <div id="play-instruments" class="play-instruments">
+
+                            <h3 class="md-text text-center">Play Instrument</h3>
+
+                            <div class="my-2 grid grid-1">
+
+                                <div class="instrument-1">
+                                    <img src="resources/img/main/utilities/piano-play.gif" alt="">
+                                </div>
+
+                                <div class="button-play-piano my-auto">
+                                    <a href="#open-piano">
+                                        <div>
+                                            <h4 class="text-center">Play Keyboard</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="instrument-2">
+                                    <img src="resources/img/main/utilities/drumkit-play.gif" alt="">
+                                </div>
+
+                                <div class="button-play-drumkit my-auto">
+                                    <a href="#open-drumkit">
+                                        <div>
+                                            <h4 class="text-center">Play Drumkit</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
+                </div>
 
-                    <div class="grid grid-1 voice-recorder-graphics">
+            </section>
 
-                        <div>
-                            <h3 class="text-center md-text">Record & roll the <br /> test text.</h3>
-                        </div>
+            <!-- Partners Section -->
+            <section id="section-our-partners" class="section-our-partners my-4">
 
-                        <div>
-                            <img src="/resources/img/main/utilities/graphic2.svg" alt="">
-                        </div>
+                <div class="container">
 
-                    </div>
+                    <div class="partners-box">
 
-                    <div class="grid grid-1 music-intruments-graphics">
+                        <h2 class="text-center lg-text my-2">Our Partners</h2>
 
-                        <div>
-                            <h3 class="text-center">I am a test <br /> for instruments.</h3>
-                        </div>
-
-                        <div>
-                            <img src="/resources/img/main/utilities/graphic3.svg" alt="">
-                        </div>
-
-                    </div>
-
-                    <div id="play-instruments" class="play-instruments">
-
-                        <h3 class="md-text text-center">Play Instrument</h3>
-
-                        <div class="my-2 grid grid-1">
-
-                            <div class="instrument-1">
-                                <img src="/resources/img/main/utilities/piano-play.gif" alt="">
-                            </div>
-
-                            <div class="button-play-piano my-auto">
-                                <a href="#open-piano">
-                                    <div>
-                                        <h4 class="text-center">Play Keyboard</h4>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="instrument-2">
-                                <img src="/resources/img/main/utilities/drumkit-play.gif" alt="">
-                            </div>
-
-                            <div class="button-play-drumkit my-auto">
-                                <a href="#open-drumkit">
-                                    <div>
-                                        <h4 class="text-center">Play Drumkit</h4>
-                                    </div>
-                                </a>
-                            </div>
-
+                        <div class="partner-brands grid grid-5">
+                            <div><img class="partner-image" src="resources/img/main/partners/spotify.png"></div>
+                            <div><img class="partner-image" src="resources/img/main/partners/hungama.png"></div>
+                            <div><img class="partner-image" src="resources/img/main/partners/tips.png"></div>
+                            <div><img class="partner-image" src="resources/img/main/partners/youtube-music.png"></div>
+                            <div><img class="partner-image" src="resources/img/main/partners/soundcloud.png"></div>
                         </div>
 
                     </div>
 
                 </div>
-            </div>
 
-        </section>
+            </section>
 
-        <!-- Partners Section -->
-        <section id="section-our-partners" class="section-our-partners my-4">
+        </main>
 
-            <div class="container">
+        <footer>
+            <h4>Copyright &copy; 2020 | All rights reserved.</h4>
+        </footer>
 
-                <div class="partners-box">
+        <!-- Fixed Music Playbar -->
+        <div id="section-playbar" class="section-playbar">
 
-                    <h2 class="text-center lg-text my-2">Our Partners</h2>
-
-                    <div class="partner-brands grid grid-5">
-                        <div><img class="partner-image" src="/resources/img/main/partners/spotify.png"></div>
-                        <div><img class="partner-image" src="/resources/img/main/partners/hungama.png"></div>
-                        <div><img class="partner-image" src="/resources/img/main/partners/tips.png"></div>
-                        <div><img class="partner-image" src="/resources/img/main/partners/youtube-music.png"></div>
-                        <div><img class="partner-image" src="/resources/img/main/partners/soundcloud.png"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <h4>Copyright &copy; 2020 | All rights reserved.</h4>
-    </footer>
-
-    <!-- Fixed Music Playbar -->
-    <div id="section-playbar" class="section-playbar">
-
-        <div class="flex grid-mobile">
-
-            <div>
-                <img id="playbar-song-thumbnail" src="/resources/img/main/services/service-vocals.jpg">
-            </div>
-
-            <div>
-                <h4 id="playbar-song-title" class="lead-text">Soundtrack</h4><br><span>
-                    <p class="playbar-song-artist" id="playbar-song-artist">By Various</p>
-                </span>
-            </div>
-
-            <div class="section-playbar-icons">
-                <i id="playbar-button-previous" class="fas fa-backward"></i>
-                <i id="playbar-button-play" class="fas fa-play"></i>
-                <i id="playbar-button-stop" class="fas fa-stop"></i>
-                <i id="playbar-button-next" class="fas fa-forward"></i>
-            </div>
-
-            <div class="section-playbar-range">
+            <div class="flex grid-mobile">
 
                 <div>
-                    <input type="range" min="0" max="100" value="0" id="playbar-range">
-                </div>
-
-                <div class="playbar-time-stamps">
-                    <p id="playbar-current-time">0:00</p>
-                    <p id="playbar-total-duration">0:00</p>
-                </div>
-
-            </div>
-
-            <div>
-                <i class="fa fa-volume-up" aria-hidden="true" id="playbar-button-mute"></i>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Fixed Top Buttton -->
-    <div class="section-top-button">
-
-        <a href="#section-hero">
-            <div class="flex">
-                <p>&#8593;</p>
-            </div>
-        </a>
-
-    </div>
-
-    <!-- Modal : Piano -->
-
-    <div id="open-piano" class="piano-modal">
-
-        <div class="grid text-center">
-
-            <div class="piano-modal-header">
-
-                <div class="piano-modal-heading">
-                    <h3 class="md-text">Super Piano</h3>
+                    <img id="playbar-song-thumbnail" src="resources/img/main/services/service-vocals.jpg">
                 </div>
 
                 <div>
-                    <a title="Close" href="#play-instruments">
-                        <p>&#10005;</p>
-                    </a>
+                    <h4 id="playbar-song-title" class="lead-text">Soundtrack</h4><br><span>
+                        <p class="playbar-song-artist" id="playbar-song-artist">By Various</p>
+                    </span>
                 </div>
 
-            </div>
+                <div class="section-playbar-icons">
+                    <i id="playbar-button-previous" class="fas fa-backward"></i>
+                    <i id="playbar-button-play" class="fas fa-play"></i>
+                    <i id="playbar-button-stop" class="fas fa-stop"></i>
+                    <i id="playbar-button-next" class="fas fa-forward"></i>
+                </div>
 
-            <div class="piano-player">
-                <object id="svgObject" data="/resources/img/addons/pianokit.svg" type="image/svg+xml" height="300"
-                    width="1000">
-                </object>
-            </div>
+                <div class="section-playbar-range">
 
-        </div>
-    </div>
+                    <div>
+                        <input type="range" min="0" max="100" value="0" id="playbar-range">
+                    </div>
 
-    <!-- Modal : Drumkit -->
+                    <div class="playbar-time-stamps">
+                        <p id="playbar-current-time">0:00</p>
+                        <p id="playbar-total-duration">0:00</p>
+                    </div>
 
-    <div id="open-drumkit" class="drumkit-modal">
-
-        <div class="grid text-center">
-
-            <div class="drumkit-modal-header">
-
-                <div class="drumkit-modal-heading">
-                    <h3 class="md-text">Super Drumkit</h3>
                 </div>
 
                 <div>
-                    <a title="Close" href="#play-instruments">
-                        <p>&#10005;</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="drumkit-player">
-                <img src="/resources/img/addons/drumkit.png" alt="">
-            </div>
-
-            <div class="drumkit-keys">
-
-                <div class="flex grid-mobile-3 py-1">
-
-                    <div id="clap" class="drumkit-beat-container">
-                        <h4>Clap</h4>
-                        <h3>A</h3>
-                    </div>
-
-                    <div id="hihat" class="drumkit-beat-container">
-                        <h4>Hihat</h4>
-                        <h3>S</h3>
-                    </div>
-
-                    <div id="kick" class="drumkit-beat-container">
-                        <h4>Kick</h4>
-                        <h3>D</h3>
-                    </div>
-
-                    <div id="openhat" class="drumkit-beat-container">
-                        <h4>Openhat</h4>
-                        <h3>F</h3>
-                    </div>
-
-                    <div id="boom" class="drumkit-beat-container">
-                        <h4>Boom</h4>
-                        <h3>G</h3>
-                    </div>
-
-                    <div id="ride" class="drumkit-beat-container">
-                        <h4>Ride</h4>
-                        <h3>H</h3>
-                    </div>
-
-                    <div id="snare" class="drumkit-beat-container">
-                        <h4>Snare</h4>
-                        <h3>J</h3>
-                    </div>
-
-                    <div id="tom" class="drumkit-beat-container">
-                        <h4>Tom</h4>
-                        <h3>K</h3>
-                    </div>
-
-                    <div id="tink" class="drumkit-beat-container">
-                        <h4>Tink</h4>
-                        <h3>L</h3>
-                    </div>
-
+                    <i class="fa fa-volume-up" aria-hidden="true" id="playbar-button-mute"></i>
                 </div>
 
             </div>
 
         </div>
+
+        <!-- Fixed Top Buttton -->
+        <div class="section-top-button">
+
+            <a href="#section-hero">
+                <div class="flex">
+                    <p>&#8593;</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Modal : Piano -->
+
+        <div id="open-piano" class="piano-modal">
+
+            <div class="grid text-center">
+
+                <div class="piano-modal-header">
+
+                    <div class="piano-modal-heading">
+                        <h3 class="md-text">Super Piano</h3>
+                    </div>
+
+                    <div>
+                        <a title="Close" href="#play-instruments">
+                            <p>&#10005;</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="piano-player">
+                    <object id="svgObject" data="resources/img/addons/pianokit.svg" type="image/svg+xml" height="300"
+                        width="1000">
+                    </object>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal : Drumkit -->
+
+        <div id="open-drumkit" class="drumkit-modal">
+
+            <div class="grid text-center">
+
+                <div class="drumkit-modal-header">
+
+                    <div class="drumkit-modal-heading">
+                        <h3 class="md-text">Super Drumkit</h3>
+                    </div>
+
+                    <div>
+                        <a title="Close" href="#play-instruments">
+                            <p>&#10005;</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="drumkit-player">
+                    <img src="resources/img/addons/drumkit.png" alt="">
+                </div>
+
+                <div class="drumkit-keys">
+
+                    <div class="flex grid-mobile-3 py-1">
+
+                        <div id="clap" class="drumkit-beat-container">
+                            <h4>Clap</h4>
+                            <h3>A</h3>
+                        </div>
+
+                        <div id="hihat" class="drumkit-beat-container">
+                            <h4>Hihat</h4>
+                            <h3>S</h3>
+                        </div>
+
+                        <div id="kick" class="drumkit-beat-container">
+                            <h4>Kick</h4>
+                            <h3>D</h3>
+                        </div>
+
+                        <div id="openhat" class="drumkit-beat-container">
+                            <h4>Openhat</h4>
+                            <h3>F</h3>
+                        </div>
+
+                        <div id="boom" class="drumkit-beat-container">
+                            <h4>Boom</h4>
+                            <h3>G</h3>
+                        </div>
+
+                        <div id="ride" class="drumkit-beat-container">
+                            <h4>Ride</h4>
+                            <h3>H</h3>
+                        </div>
+
+                        <div id="snare" class="drumkit-beat-container">
+                            <h4>Snare</h4>
+                            <h3>J</h3>
+                        </div>
+
+                        <div id="tom" class="drumkit-beat-container">
+                            <h4>Tom</h4>
+                            <h3>K</h3>
+                        </div>
+
+                        <div id="tink" class="drumkit-beat-container">
+                            <h4>Tink</h4>
+                            <h3>L</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
+    <script src="/js/script.js"></script>
     <script type="module" src="js/musicInstruments/musicInstruments.js"></script>
     <script type="module" src="js/musicInstruments/functions/instrumentFunctions.js"></script>
     <script type="module" src="js/voiceRecorder/microphone.js"></script>
