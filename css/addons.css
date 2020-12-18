@@ -30,6 +30,11 @@
   .section-playbar i {
     font-size: 1rem;
     padding: 0 1.5rem;
+    cursor: pointer;
+  }
+
+  .section-playbar input {
+    cursor: pointer;
   }
 
   input[type=range]::-webkit-slider-runnable-track {

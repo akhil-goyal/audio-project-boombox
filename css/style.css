@@ -36,7 +36,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.171), 
     rgba(0, 0, 0, 0.171)
-  ),url(/resources/img/main/hero/hero-image.jpg);
+  ),url(../resources/img/main/hero/hero-image.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -76,7 +76,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.600), 
     rgba(0, 0, 0, 0.600)
-  ),url(/resources/img/main/services/service-songs.jpg);
+  ),url(../resources/img/main/services/service-songs.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -86,7 +86,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.500), 
     rgba(0, 0, 0, 0.500)
-  ),url(/resources/img/main/services/service-vocals.jpg);
+  ),url(../resources/img/main/services/service-vocals.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -96,7 +96,7 @@ nav a:hover {
   background: linear-gradient(
     rgba(0, 0, 0, 0.400), 
     rgba(0, 0, 0, 0.400)
-  ),url(/resources/img/main/services/service-instruments.jpg);
+  ),url(../resources/img/main/services/service-instruments.jpg);
   background-size: cover;
   background-position: center;
   color: var(--white-color);
@@ -181,6 +181,14 @@ nav a:hover {
 
 .song-controls {
   margin-right: auto;
+}
+
+#playlist-button-play {
+  cursor: pointer;
+}
+
+#playlist-button-play:hover{
+  color: rgb(167, 167, 167);
 }
 
 .utilities .flex {
@@ -326,16 +334,38 @@ nav a:hover {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: solid 0.1rem var(--primary-color); 
+  border: solid 0.1rem var(--secondary-color); 
   border-radius: 1rem;
+  color: var(--secondary-color);
+}
+
+.button-play-piano div:hover{
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  color: #fff;
 }
 
 .button-play-drumkit div {
   height: 2rem; 
   width: 12rem; 
   padding: 0.1rem 0;
-  border: solid 0.1rem var(--primary-color); 
+  border: solid 0.1rem var(--secondary-color); 
   border-radius: 1rem;
+  color: var(--secondary-color);
+}
+
+.button-play-drumkit div:hover{
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  color: #fff;
 }
 /* ---------------------------------------------------------------- */
 
