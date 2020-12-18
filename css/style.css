@@ -239,19 +239,36 @@ nav a:hover {
 
 .microphone-audio-controls {
   display: flex;
+  width: 70%;
+  margin: 0 auto;
   grid-column: 1 / span 2; 
   justify-content: space-evenly;
+  border: 0.2rem solid rgb(219, 219, 219);
+  border-radius: 1rem;
 }
 
 .microphone-download-controls {
   grid-column: 1 / span 2;
 }
 
+.microphone-download-controls a {
+  color: red;
+}
+
 .microphone-audio-controls i,
 .microphone-download-controls i {
   font-size: 2rem;
   cursor: pointer;
-  color: var(--secondary-color);
+  color: rgb(52, 50, 185);
+  margin-top: 1rem;
+}
+
+.microphone-audio-controls i:hover{
+  color: rgb(94, 94, 94);
+}
+
+.microphone-download-controls a:hover{
+  color: rgb(94, 94, 94);
 }
 
 .microphone-audio-controls p,

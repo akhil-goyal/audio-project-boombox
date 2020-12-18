@@ -72,7 +72,7 @@ musicLibrary.map((item, index) => {
 
     songControls.appendChild(waveformsContainer);
 
-    /////
+    // /////
 
     let audioVisualizer = document.createElement('p');
 
