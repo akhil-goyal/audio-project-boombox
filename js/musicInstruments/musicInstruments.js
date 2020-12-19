@@ -1,4 +1,10 @@
-import { playPiano, drumkitOnClick, drumkitOnKeypress } from './functions/instrumentFunctions.js';
+import {
+    playPiano,
+    handleMouseEnter,
+    handleMouseLeave,
+    drumkitOnClick,
+    drumkitOnKeypress
+} from './functions/instrumentFunctions.js';
 
 let pianoSvg = document.getElementById('svgObject').contentDocument;
 
@@ -7,6 +13,18 @@ pianoSvg.addEventListener('click', (event) => {
     let { id } = event.srcElement;
 
     playPiano(id);
+
+});
+
+pianoSvg.addEventListener('mouseover', (event) => {
+
+    handleMouseEnter(event.srcElement);
+
+});
+
+pianoSvg.addEventListener('mouseout', (event) => {
+
+    handleMouseLeave(event.srcElement);
 
 });
 

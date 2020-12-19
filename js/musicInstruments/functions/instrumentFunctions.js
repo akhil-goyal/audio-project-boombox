@@ -5,9 +5,34 @@ let playPiano = (id) => {
 
     let audio = new Audio();
 
-    audio.load();
     audio.src = pianoNotes[id].url;
     audio.play();
+
+}
+
+let handleMouseEnter = (srcElement) => {
+
+    let keyColor = srcElement.getAttribute('class');
+
+    if (keyColor.includes('white-key')) {
+
+        srcElement.setAttribute("style", "fill-opacity: 0.7");
+
+    } else if (keyColor.includes('black-key')) {
+
+        srcElement.setAttribute("style", "fill-opacity: 0.9");
+
+    } else {
+
+        return;
+
+    }
+
+}
+
+let handleMouseLeave = (srcElement) => {
+
+    srcElement.setAttribute("style", "fill-opacity: 1");
 
 }
 
@@ -34,6 +59,8 @@ let drumkitOnClick = (id) => {
 
 export {
     playPiano,
+    handleMouseEnter,
+    handleMouseLeave,
     drumkitOnKeypress,
     drumkitOnClick
 }
