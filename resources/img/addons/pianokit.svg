@@ -4,25 +4,25 @@
 	<defs></defs>
 		<g id="piano-keyboard">
 			<g id="octave-1">
-				<rect id="C4-key" class="piano-key white-key" data-piano-key="C" stroke="#555555" fill="#fff" x="0" y="0" width="80" height="400"></rect>
-				<rect id="D4-key" class="piano-key white-key" data-piano-key="D" stroke="#555555" fill="#fff" x="80" y="0" width="80" height="400"></rect>
-				<rect id="E4-key" class="piano-key white-key" data-piano-key="E" stroke="#555555" fill="#fff" x="160" y="0" width="80" height="400"></rect>
-				<rect id="F4-key" class="piano-key white-key" data-piano-key="F" stroke="#555555" fill="#fff" x="240" y="0" width="80" height="400"></rect>
-				<rect id="G4-key" class="piano-key white-key" data-piano-key="G" stroke="#555555" fill="#fff" x="320" y="0" width="80" height="400"></rect>
-				<rect id="A4-key" class="piano-key white-key" data-piano-key="A" stroke="#555555" fill="#fff" x="400" y="0" width="80" height="400"></rect>
-				<rect id="B4-key" class="piano-key white-key" data-piano-key="B" stroke="#555555" fill="#fff" x="480" y="0" width="80" height="400"></rect>
-				<rect id="Db4-key" class="piano-key black-key" data-piano-key="C#" stroke="#979797" fill="#000" x="60" y="0" width="40" height="280"></rect>
-				<rect id="Eb4-key" class="piano-key black-key" data-piano-key="D#" stroke="#979797" fill="#000" x="140" y="0" width="40" height="280"></rect>
-				<rect id="Gb4-key" class="piano-key black-key" data-piano-key="F#" stroke="#979797" fill="#000" x="300" y="0" width="40" height="280"></rect>
-				<rect id="Ab4-key" class="piano-key black-key" data-piano-key="G#" stroke="#979797" fill="#000" x="380" y="0" width="40" height="280"></rect>
-				<rect id="Bb4-key" class="piano-key black-key" data-piano-key="A#" stroke="#979797" fill="#000" x="460" y="0" width="40" height="280"></rect>
+				<rect id="C4-key" class="piano-key white-key" data-piano-key="C" stroke="#555555" fill="#fff" x="0" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="D4-key" class="piano-key white-key" data-piano-key="D" stroke="#555555" fill="#fff" x="80" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="E4-key" class="piano-key white-key" data-piano-key="E" stroke="#555555" fill="#fff" x="160" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="F4-key" class="piano-key white-key" data-piano-key="F" stroke="#555555" fill="#fff" x="240" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="G4-key" class="piano-key white-key" data-piano-key="G" stroke="#555555" fill="#fff" x="320" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="A4-key" class="piano-key white-key" data-piano-key="A" stroke="#555555" fill="#fff" x="400" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="B4-key" class="piano-key white-key" data-piano-key="B" stroke="#555555" fill="#fff" x="480" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="Db4-key" class="piano-key black-key" data-piano-key="C#" stroke="#979797" fill="#000" x="60" y="0" rx="15" width="40" height="280"></rect>
+				<rect id="Eb4-key" class="piano-key black-key" data-piano-key="D#" stroke="#979797" fill="#000" x="140" y="0" rx="15" width="40" height="280"></rect>
+				<rect id="Gb4-key" class="piano-key black-key" data-piano-key="F#" stroke="#979797" fill="#000" x="300" y="0" rx="15" width="40" height="280"></rect>
+				<rect id="Ab4-key" class="piano-key black-key" data-piano-key="G#" stroke="#979797" fill="#000" x="380" y="0" rx="15" width="40" height="280"></rect>
+				<rect id="Bb4-key" class="piano-key black-key" data-piano-key="A#" stroke="#979797" fill="#000" x="460" y="0" rx="15" width="40" height="280"></rect>
 			</g>
 			<g id="octave-2" transform="translate(560.000000, 0.000000)">
-				<rect id="C5-key" class="piano-key white-key" data-piano-key="C" stroke="#555555" fill="#fff" x="0" y="0" width="80" height="400"></rect>
-				<rect id="D5-key" class="piano-key white-key" data-piano-key="D" stroke="#555555" fill="#fff" x="80" y="0" width="80" height="400"></rect>
-				<rect id="E5-key" class="piano-key white-key" data-piano-key="E" stroke="#555555" fill="#fff" x="160" y="0" width="80" height="400"></rect>
-				<rect id="Db5-key" class="piano-key black-key" data-piano-key="C#" stroke="#979797" fill="#000" x="60" y="0" width="40" height="280"></rect>
-				<rect id="Eb5-key" class="piano-key black-key" data-piano-key="D#" stroke="#979797" fill="#000" x="140" y="0" width="40" height="280"></rect>
+				<rect id="C5-key" class="piano-key white-key" data-piano-key="C" stroke="#555555" fill="#fff" x="0" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="D5-key" class="piano-key white-key" data-piano-key="D" stroke="#555555" fill="#fff" x="80" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="E5-key" class="piano-key white-key" data-piano-key="E" stroke="#555555" fill="#fff" x="160" y="0" rx="15" width="80" height="400"></rect>
+				<rect id="Db5-key" class="piano-key black-key" data-piano-key="C#" stroke="#979797" fill="#000" x="60" y="0" rx="15" width="40" height="280"></rect>
+				<rect id="Eb5-key" class="piano-key black-key" data-piano-key="D#" stroke="#979797" fill="#000" x="140" y="0" rx="15" width="40" height="280"></rect>
 			</g>
 		</g>
 </svg>
