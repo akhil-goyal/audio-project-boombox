@@ -53,7 +53,7 @@ musicLibrary.map((item, index) => {
 
     playIcon.id = 'playlist-button-play';
 
-    playIcon.className = 'flex';
+    playIcon.className = 'playnow-grid';
 
     playIcon.innerHTML = 'Play &#9654;'
 
@@ -76,7 +76,7 @@ musicLibrary.map((item, index) => {
 
     let audioVisualizer = document.createElement('p');
 
-    audioVisualizer.innerHTML = 'I am a container for waveforms. Here is the place where you will see magic.'
+    audioVisualizer.innerHTML = 'Ariana Grande'
 
     waveformsContainer.appendChild(audioVisualizer);
 

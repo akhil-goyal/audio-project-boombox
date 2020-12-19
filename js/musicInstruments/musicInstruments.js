@@ -1,3 +1,4 @@
+import { pianoNotes } from '../audioLists/pianoNotes.js';
 import {
     playPiano,
     handleMouseEnter,
@@ -7,26 +8,29 @@ import {
     drumkitOnKeyRemoval
 } from './functions/instrumentFunctions.js';
 
-let pianoSvg = document.getElementById('svgObject').contentDocument;
+window.addEventListener('load', () => {
 
-pianoSvg.addEventListener('click', (event) => {
+    let pianoSvg = document.getElementById('svgObject').contentDocument;
 
-    let { id } = event.srcElement;
+    pianoSvg.addEventListener('click', (event) => {
 
-    playPiano(id);
+        let { id } = event.srcElement;
 
-});
+        playPiano(id);
 
-pianoSvg.addEventListener('mouseover', (event) => {
+    });
 
-    handleMouseEnter(event.srcElement);
+    pianoSvg.addEventListener('mouseover', (event) => {
 
-});
+        handleMouseEnter(event.srcElement);
 
-pianoSvg.addEventListener('mouseout', (event) => {
+    });
 
-    handleMouseLeave(event.srcElement);
+    pianoSvg.addEventListener('mouseout', (event) => {
 
+        handleMouseLeave(event.srcElement);
+
+    });
 });
 
 document.addEventListener('click', (event) => {

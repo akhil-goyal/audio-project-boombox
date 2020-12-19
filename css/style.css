@@ -68,6 +68,10 @@ nav a:hover {
   margin-top: 3rem;
 }
 
+.section-our-services .container{
+  overflow: unset;
+}
+
 .section-our-services .grid {
   gap: 2rem;
 }
@@ -178,7 +182,14 @@ nav a:hover {
 }
 
 .song-container .grid {
+  grid-template-columns: repeat(4, 1fr);
   gap: 0rem;
+}
+
+.playnow-grid {
+  grid-column: 2/span 4;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .song-thumbnail {
@@ -189,6 +200,10 @@ nav a:hover {
 
 .song-controls {
   margin-right: auto;
+}
+
+.song-controls .lead-text{
+  min-width: 10rem;
 }
 
 #playlist-button-play {
