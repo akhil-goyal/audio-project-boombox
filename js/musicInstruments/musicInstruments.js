@@ -3,7 +3,8 @@ import {
     handleMouseEnter,
     handleMouseLeave,
     drumkitOnClick,
-    drumkitOnKeypress
+    drumkitOnKeyPress,
+    drumkitOnKeyRemoval
 } from './functions/instrumentFunctions.js';
 
 let pianoSvg = document.getElementById('svgObject').contentDocument;
@@ -40,6 +41,14 @@ window.addEventListener('keydown', (event) => {
 
     let { code } = event;
 
-    drumkitOnKeypress(code);
+    drumkitOnKeyPress(code);
 
 });
+
+window.addEventListener('keyup', (event) => {
+
+    let { code } = event;
+
+    drumkitOnKeyRemoval(code);
+
+})

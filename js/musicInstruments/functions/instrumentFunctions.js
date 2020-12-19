@@ -1,6 +1,8 @@
 import { pianoNotes } from './../../audioLists/pianoNotes.js';
 import { drumBeats } from './../../audioLists/drumBeats.js';
 
+let drumKeys = document.querySelectorAll('.drumkit-beat-container');
+
 let playPiano = (id) => {
 
     let audio = new Audio();
@@ -36,11 +38,31 @@ let handleMouseLeave = (srcElement) => {
 
 }
 
-let drumkitOnKeypress = (code) => {
+let drumkitOnKeyPress = (code) => {
+
+    drumKeys.forEach((beat) => {
+
+        if (drumBeats[code].beat.toLowerCase() === beat.id) {
+            beat.classList.add('active');
+        }
+
+    });
 
     let audio = new Audio();
     audio.src = drumBeats[code].url;
     audio.play();
+
+}
+
+let drumkitOnKeyRemoval = (code) => {
+
+    drumKeys.forEach((beat) => {
+
+        if (drumBeats[code].beat.toLowerCase() === beat.id) {
+            beat.classList.remove('active');
+        }
+
+    });
 
 }
 
@@ -61,6 +83,7 @@ export {
     playPiano,
     handleMouseEnter,
     handleMouseLeave,
-    drumkitOnKeypress,
+    drumkitOnKeyPress,
+    drumkitOnKeyRemoval,
     drumkitOnClick
 }

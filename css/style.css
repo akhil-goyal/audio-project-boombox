@@ -80,6 +80,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   color: var(--white-color);
+  transition: all .2s ease-in-out;
 }
 
 .service-2 {
@@ -90,6 +91,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   color: var(--white-color);
+  transition: all .2s ease-in-out;
 }
 
 .service-3 {
@@ -100,7 +102,13 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   color: var(--white-color);
+  transition: all .2s ease-in-out;
 }
+
+
+.service-1:hover { transform: scale(1.05); }
+.service-2:hover { transform: scale(1.05); }
+.service-3:hover { transform: scale(1.05); }
 /* ---------------------------------------------------------------- */
 
 

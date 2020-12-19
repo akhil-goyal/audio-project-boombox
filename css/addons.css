@@ -259,7 +259,7 @@
   }
 
   .drumkit-beat-container.active{
-    transform: translateY(-15px);
+    transform: translateY(-50px);
   }
   
   .drumkit-play-button div {
