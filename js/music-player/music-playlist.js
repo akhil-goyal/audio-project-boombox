@@ -1,5 +1,5 @@
-import { musicLibrary } from '../audioLists/songsList.js';
-import { loadSoundTrack, playSong } from './playBar.js';
+import { musicLibrary } from '../audio-lists/songs-list.js';
+import { loadSoundTrack, playSong } from './play-bar.js';
 
 let listContainer = document.querySelector('.scrollable-list');
 let unorderedList = document.createElement('ul');

@@ -1,5 +1,5 @@
-import { pianoNotes } from './../../audioLists/pianoNotes.js';
-import { drumBeats } from './../../audioLists/drumBeats.js';
+import { pianoNotes } from '../audio-lists/piano-notes.js';
+import { drumBeats } from '../audio-lists/drum-beats.js';
 
 let drumKeys = document.querySelectorAll('.drumkit-beat-container');
 

@@ -1,4 +1,3 @@
-import { pianoNotes } from '../audioLists/pianoNotes.js';
 import {
     playPiano,
     handleMouseEnter,
@@ -6,7 +5,7 @@ import {
     drumkitOnClick,
     drumkitOnKeyPress,
     drumkitOnKeyRemoval
-} from './functions/instrumentFunctions.js';
+} from './instrument-functions.js';
 
 window.addEventListener('load', () => {
 
