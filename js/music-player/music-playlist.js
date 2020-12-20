@@ -8,9 +8,16 @@ let listContainer = document.querySelector('.scrollable-list');
 // Creating an unordered list.
 let unorderedList = document.createElement('ul');
 
+// Creating a list item.
+let listItem = document.createElement('li');
+
 // Appending the newly created unordered list to
 // the listContainer.
 listContainer.appendChild(unorderedList);
+
+// Appending the newly created list item to
+// the unorderedList.
+unorderedList.appendChild(listItem);
 
 // Looping through the musicLibrary array.
 musicLibrary.map((item, index) => {
@@ -22,7 +29,7 @@ musicLibrary.map((item, index) => {
     songContainer.className = 'song-container flex';
 
     // Appending the songContainer element to unordered list.
-    unorderedList.appendChild(songContainer);
+    listItem.appendChild(songContainer);
 
     //////////////////////////////////////////////////////////////////
 
@@ -31,6 +38,9 @@ musicLibrary.map((item, index) => {
 
     // Assigning the newly created element songThumbnail a class.
     songThumbnail.className = 'song-thumbnail m-1';
+
+    // Assigning the newly created element songThumbnail an alt text.
+    songThumbnail.alt = 'Song thumbnail';
 
     // Assigning the src to songThumbnail from musicLibrary array.
     songThumbnail.src = item.img;
