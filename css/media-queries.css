@@ -126,7 +126,17 @@
     .record-icon-container {
         padding: 2rem 0;
     }
-    
+
+    .microphone-download-controls {
+        grid-column: 1 / span 2;
+        padding: 1rem;
+    }
+
+    .microphone-audio-controls i,
+    .microphone-download-controls i,
+    .microphone-download-controls a {
+        font-size: 1rem;
+    }
     
     .voice-recorder-graphics {
         width: 92%;
@@ -178,7 +188,7 @@
         color: var(--white-color);
         text-align: center;
         padding: 1.5rem 0;
-        margin-bottom: 15.5rem;
+        margin-bottom: 19.5rem;
     }
     
     footer h4 {
@@ -195,14 +205,25 @@
         padding: 1rem 0;
         z-index: 9999;
     }
+
+    .volume-container {
+        display: none;
+    }
     
     .section-playbar .grid-mobile{
         row-gap: 1rem;
     }
     
     .section-playbar input {
-        width: 90%;
+        clear: both;
+        width: 94%;
+    }
+
+    .playbar-time-stamps {
+        height: 1rem;
+        width: 21rem;
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
     /* ---------------------------------------------------------------- */
     
@@ -211,8 +232,16 @@
     
     /* ----------------------------- MODALS --------------------------- */
     /* Piano */
+    .piano-modal-heading {
+        padding: 0px 1rem;
+    }
+
     .piano-modal-heading h3 {
         width: max-content;
+    }
+
+    #svgObject {
+        width: 100% !important;
     }
     
     /* Drumkit */
@@ -225,6 +254,10 @@
     
     .drumkit-modal > div {
         height: 38rem;
+    }
+
+    .drumkit-modal-heading {
+        padding: 0px 2rem;
     }
     
     .drumkit-modal-heading h3 {
@@ -399,6 +432,16 @@
         padding: 2rem 0;
     }
     
+    .microphone-download-controls {
+        grid-column: 1 / span 2;
+        padding: 1rem;
+    }
+
+    .microphone-audio-controls i,
+    .microphone-download-controls i,
+    .microphone-download-controls a {
+        font-size: 1rem;
+    }
     
     .voice-recorder-graphics {
         width: 92%;
@@ -450,7 +493,7 @@
         color: var(--white-color);
         text-align: center;
         padding: 1.5rem 0;
-        margin-bottom: 15.5rem;
+        margin-bottom: 19.5rem;
     }
     
     footer h4 {
@@ -473,8 +516,15 @@
     }
     
     .section-playbar input {
-        width: 90%;
+        clear: both;
+        width: 94%;
+    }
+
+    .playbar-time-stamps {
+        height: 1rem;
+        width: 21rem;
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
     /* ---------------------------------------------------------------- */
     
@@ -483,8 +533,16 @@
     
     /* ----------------------------- MODALS --------------------------- */
     /* Piano */
+    .piano-modal-heading {
+        padding: 0px 1rem;
+    }
+
     .piano-modal-heading h3 {
         width: max-content;
+    }
+
+    #svgObject {
+        width: 100% !important;
     }
     
     /* Drumkit */
@@ -497,6 +555,10 @@
     
     .drumkit-modal > div {
         height: 48rem;
+    }
+
+    .drumkit-modal-heading {
+        padding: 0 2rem;
     }
     
     .drumkit-modal-heading h3 {
@@ -596,6 +658,10 @@
         width: 92%;
         margin: 0 auto;
     }
+
+    .song-controls .lead-text {
+        overflow: hidden;
+    }
     
     /* Microphone */
     .vocals-box {
@@ -635,6 +701,10 @@
         padding: 2rem 0;
     }
     
+    .microphone-download-controls {
+        grid-column: 1 / span 2;
+        padding: 1rem;
+    }
     
     .voice-recorder-graphics {
         width: 92%;
@@ -678,7 +748,7 @@
         color: var(--white-color);
         text-align: center;
         padding: 2.5rem 0;
-        margin-bottom: 15.5rem;
+        margin-bottom: 19.5rem;
     }
     /* ---------------------------------------------------------------- */
     
@@ -691,14 +761,25 @@
         padding: 1rem 0;
         z-index: 9999;
     }
+
+    .volume-container {
+        display: none;
+    }
     
     .section-playbar .grid-mobile{
         row-gap: 1rem;
     }
     
     .section-playbar input {
-        width: 90%;
+        clear: both;
+        width: 94%;
+    }
+
+    .playbar-time-stamps {
+        height: 1rem;
+        width: 45rem;
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
     /* ---------------------------------------------------------------- */
     
@@ -710,11 +791,15 @@
     /* Piano */
 
     .piano-modal-heading {
-        padding: 0px 18rem;
+        padding: 0px 10rem;
     }
     
     .piano-modal-heading h3 {
         width: max-content;
+    }
+
+    #svgObject {
+        width: 100% !important;
     }
 
     /* Drumkit */
@@ -727,6 +812,10 @@
     
     .drumkit-modal > div {
         height: 59rem;
+    }
+
+    .drumkit-modal-heading {
+        padding: 0 10rem;
     }
     
     .drumkit-modal-heading h3 {
