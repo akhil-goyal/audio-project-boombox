@@ -1,838 +1,4029 @@
-/* Small devices (landscape phones, 575.98px and up) */
 @media (max-width: 575.98px) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    /* ----------------------------- RESETS --------------------------- */
-    .grid-3 {
-        grid-template-columns: repeat(1, 1fr);
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 6rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist-graphics h3 {
+    font-size: 4rem;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls h4 {
+    font-size: 18px;
+  }
+
+  .song-thumbnail {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .microphone-audio-controls i,
+  .microphone-download-controls i,
+  .microphone-download-controls a {
+    font-size: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  .voice-recorder-graphics h3 {
+    font-size: 3rem;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .music-intruments-graphics h3 {
+    font-size: 2rem;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 30%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 19.5rem;
+  }
+
+  footer h4 {
+    font-size: 0.7rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .volume-container {
+    display: none;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+  /* Piano */
+  .piano-modal-heading {
+    padding: 0px 1rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 38rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0px 2rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    font-size: 2.2rem;
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 35%;
+  }
+
+  .drumkit-beat-container {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .drumkit-beat-container h4 {
+    text-align: center;
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+
+  .drumkit-play-button div {
+    margin: 0 auto;
+    height: 2rem;
+    width: 6rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.2rem;
+  }
+
+  .drumkit-play-button p {
+    margin: 0px;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media (min-width: 576px) and (max-width: 769.98px) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 14rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls .lead-text {
+    overflow: hidden;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 20%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 19.5rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .volume-container {
+    display: none;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 45rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+
+  /* Piano */
+
+  .piano-modal-heading {
+    padding: 0px 10rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 59rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0 10rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 45%;
+  }
+
+  .drumkit-beat-container h4 {
+    padding: 1rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media screen and (min-width: 1900px) {
+}
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+     /* ----------------------------- Navbar --------------------------- */
+.navbar {
+    background-color: transparent;
+    color: var(--white-color);
+    height: 5rem;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  nav a {
+    color: var(--white-color);
+    margin: 0 2rem;
+  }
+  
+  nav a:hover {
+    color: rgb(167, 167, 167);
+  }
+  
+  .drum {
+    margin: 0 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------------ Hero ---------------------------- */
+  .section-hero {
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.171), 
+      rgba(0, 0, 0, 0.171)
+    ),url(../resources/img/main/hero/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+  }
+  
+  .hero-text {
+    padding: 20rem 0;
+    text-align: center;
+    position: relative;
+    animation: bubbleFromTop 3s;
+  }
+  
+  .hero-text h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+  }
+  
+  .hero-text h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Services --------------------------- */
+  .section-our-services {
+    margin-top: 3rem;
+  }
+  
+  .section-our-services .container{
+    overflow: unset;
+  }
+  
+  .section-our-services .grid {
+    gap: 2rem;
+  }
+  
+  .service-1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.600), 
+      rgba(0, 0, 0, 0.600)
+    ),url(../resources/img/main/services/service-songs.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-2 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.500), 
+      rgba(0, 0, 0, 0.500)
+    ),url(../resources/img/main/services/service-vocals.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-3 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.400), 
+      rgba(0, 0, 0, 0.400)
+    ),url(../resources/img/main/services/service-instruments.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  
+  .service-1:hover { transform: scale(1.05); }
+  .service-2:hover { transform: scale(1.05); }
+  .service-3:hover { transform: scale(1.05); }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Utilities -------------------------- */
+  .section-utilities {
+    margin-top: 3rem;
+  }
+  
+  .utilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Songs List - Graphics */
+  .songs-playlist-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+    height: 51.5rem;
+  }
+  
+  .songs-playlist-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .songs-playlist-graphics img {
+    height: 30rem;
+  }
+  
+  /* Songs List - Playlist */
+  .songs-playlist {
+    height: 51.7rem;
+    border: solid 0.15rem var(--light-border); 
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .songs-playlist h3 {
+    margin-top: 1rem;
+  }
+  
+  .scrollable-list {
+    margin-top: 1rem; 
+    height: 46.5rem; 
+    overflow: scroll;
+  }
+  
+  .scrollable-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .song-container {
+    color: var(--white-color);
+    border-radius: 2rem;
+    margin: 0.1rem 0;
+    background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    animation: Gradient 10s ease infinite;
+  }
+  
+  .song-container .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0rem;
+  }
+  
+  .playnow-grid {
+    grid-column: 2/span 4;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  .song-thumbnail {
+    height: 5rem; 
+    width: 5rem; 
+    border-radius: 3rem;
+  }
+  
+  .song-controls {
+    margin-right: auto;
+  }
+  
+  .song-controls .lead-text{
+    min-width: 10rem;
+  }
+  
+  #playlist-button-play {
+    cursor: pointer;
+  }
+  
+  #playlist-button-play:hover{
+    color: rgb(167, 167, 167);
+  }
+  
+  .utilities .flex {
+    justify-content: flex-end;
+  }
+  
+  .play-button {
+    margin: 0 0.5rem;
+  }
+  
+  .song-waverforms {
+    grid-column: 1 / span 2;
+  }
+  
+  /* Voice Recorder - Recording Controls */
+  .vocals-box {
+    height: 53rem; 
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+  }
+  
+  .vocals-box .grid {
+    height: 48.7rem;
+    gap: 0rem;
+  }
+  
+  .vocals-box h3 {
+    margin-top: 1rem;
+  }
+  
+  .microphone {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone img {
+    height: 30rem;
+    width: 25rem;
+    position: absolute;
+    margin-left: 6rem;
+  }
+  
+  .microphone svg {
+    width: 100%;
+    height: 32rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  
+  .microphone-audio-controls {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1 / span 2; 
+    justify-content: space-evenly;
+    border: 0.2rem solid rgb(219, 219, 219);
+    border-radius: 1rem;
+  }
+  
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone-download-controls a {
+    color: red;
+  }
+  
+  .microphone-audio-controls i,
+  .microphone-download-controls i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(52, 50, 185);
+    margin-top: 1rem;
+  }
+  
+  .microphone-audio-controls i:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-download-controls a:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-audio-controls p,
+  .microphone-download-controls a {
+    cursor: pointer;
+  }
+  
+  .icon-record.active{
+    color: rgb(197, 0, 0);
+  }
+  
+  .button-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+  .waveforms {
+    border: solid 0.1rem var(--primary-color);
+    border-radius: 0.5rem;
+    grid-column: 1 / span 2;
+    height: 5rem; 
+    width: 34.3rem; 
+    text-align: center; 
+    margin: 0 auto;
+  }
+  
+  .record-icon {
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Voice Recorder - Graphics */
+  .voice-recorder-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .voice-recorder-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .voice-recorder-graphics img {
+    height: 38rem;
+  }
+  
+  /* Instruments - Graphics */
+  .music-intruments-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .music-intruments-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  /* Instruments - Play Instruments */
+  .play-instruments {
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+    padding: 0 6rem;
+  }
+  
+  .play-instruments h3 {
+    margin-top: 1rem;
+  }
+  
+  .play-instruments img {
+    border-radius: 1rem;
+  }
+  
+  .instrument-1,
+  .instrument-2 {
+    border: solid 0.1rem#eee;
+  }
+  
+  .button-play-piano div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-piano div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  
+  .button-play-drumkit div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-drumkit div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* -------------------------- Our Partners ------------------------ */
+  .partners-box {
+    background-color: transparent;
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .partners-box h2 {
+    color: #000;
+  }
+  
+  .partner-brands {
+    margin-top: 2rem;
+  }
+  
+  .partner-image {
+    width: 60%;
+    transition: transform 0.4s ease-in;
+  }
+  
+  .partner-image:hover{
+    transform: translateY(-15px);
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 6.5rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Keyframes --------------------------- */
+  @keyframes bubbleFromTop{
+      16%{
+        transform: translateY(-100%);
+        animation-timing-function: ease-in;
+      }
+  
+      33% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      50% {
+        transform: translateY(-20%);
+        animation-timing-function: ease-in;
+      }
+  
+      66% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      83% {
+        transform: translateY(-10%);
+        animation-timing-function: ease-in;
+      }
+  
+      100% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  }
+  
+  @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Playbar ---------------------------- */
+.section-playbar {
+    height: 6.5rem;
+    width: 100%;
+    color: var(--white-color);
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+  }
+  
+  .section-playbar .flex {
+    justify-content: space-around;
+  }
+  
+  .section-playbar img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .section-playbar.play img {
+    animation-play-state: running;
+  }
+  
+  .section-playbar i {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+  }
+
+  .section-playbar input {
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+      background: rgb(129, 115, 253);
+      margin-top: -6px;
+  }
+  
+  .section-playbar input {
+    width: auto;
+  }
+
+  .playbar-song-artist {
+    margin: -1rem 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-playbar-range .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: auto;
+  }
+
+  .playbar-time-stamps{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Top Button -------------------------- */
+  .section-top-button div {
+    height: 3.5rem; 
+    width: 3.5rem; 
+    background-color: rgb(122, 122, 122); 
+    color: var(--white-color); 
+    border-radius: 0.5rem; 
+    position: fixed; 
+    bottom: 8rem; 
+    right: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .section-top-button p {
+    font-size: 1.5rem
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------ Instrument Modals ---------------------- */
+  
+  /* Modal : Piano */
+  .piano-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .piano-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .piano-modal > div {
+    height: 35rem;
+    max-width: 75rem;
+    width: 90%;
+    position: relative;
+    margin: 10% auto;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    background: rgb(179, 185, 219);
+  }
+  
+  .piano-modal .grid {
+    gap: 0rem;
+  }
+  
+  .piano-modal-header,
+  .piano-player,
+  .piano-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .piano-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .piano-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .piano-modal-heading {
+    padding: 0 26rem;
+  }
+  
+  .piano-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .piano-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: solid 0.1rem var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .piano-controls a {
+    cursor: pointer;
+  }
+  
+  /* Modal : Drumkit */
+  .drumkit-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .drumkit-modal:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  
+  .drumkit-modal > div {
+    height: 45rem;
+    max-width: 1200px;
+    width: 90%;
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(245, 227, 223);
+  }
+  
+  .drumkit-modal .grid {
+    gap: 0px;
+  }
+  
+  .drumkit-modal-header,
+  .drumkit-player,
+  .drumkit-keys,
+  .drumkit-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .drumkit-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .drumkit-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .drumkit-modal-heading {
+    padding: 0 25rem;
+  }
+  
+  .drumkit-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .drumkit-player img {
+    width: 30%;
+  }
+  
+  .drumkit-beat-container {
+    height: 6rem;
+    width: 6rem;
+    background: linear-gradient(0.65turn, #e4cc80, #ffa2a2);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+  }
+
+  .drumkit-beat-container h3,h4 {
+    pointer-events: none;
+  }
+
+  .drumkit-beat-container:hover{
+    transform: translateY(-15px);
+  }
+
+  .drumkit-beat-container.active{
+    transform: translateY(-50px);
+  }
+  
+  .drumkit-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: 1px solid var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .drumkit-controls a {
+    cursor: pointer;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* --------------------------- Keyframes --------------------------- */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
       }
     
-    .grid-5 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .grid-mobile {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- NAVBAR --------------------------- */
-    .navbar {
-        height: auto;
-    }
-    
-    .navbar ul {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .navbar ul li {
-        padding: 1rem 0;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ------------------------------- HERO ---------------------------- */
-    .hero-text {
-        padding: 6rem 0;
-    }
-    
-    .hero-text h1 {
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-    
-    .hero-text h5 {
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- UTILITIES ------------------------- */
-    .utilities {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    /* Songs Play-List */
-    .songs-playlist-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .songs-playlist-graphics h3 {
-        font-size: 4rem; 
-    }
-    
-    .songs-playlist {
-        border-radius: 1rem;
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .song-controls h4 {
-        font-size: 18px;
-    }
-    
-    .song-thumbnail {
-        height: 4rem;
-        width: 4rem;
-        border-radius: 2rem;
-    }
-    
-    /* Microphone */
-    .vocals-box {
-        border-radius: 1rem;
-        height: auto;
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .vocals-box .grid {
-        height: auto;
-    }
-    
-    .microphone {
-        height: 16rem;
-    }
-    
-    .microphone img {
-        height: 15rem;
-        width: 12.5rem;
-        margin: 0;
-        position: relative;
-    }
-    
-    .microphone svg {
-        width: 100%;
-        height: 16rem;
-        bottom: 17rem;
-        z-index: 999;
-    }
-    
-    .waveforms {
-        width: 90%;
-    }
-    
-    .record-icon-container {
-        padding: 2rem 0;
+      to {
+        transform: rotate(360deg);
+      }
     }
 
-    .microphone-download-controls {
-        grid-column: 1 / span 2;
-        padding: 1rem;
+    @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
     }
 
-    .microphone-audio-controls i,
-    .microphone-download-controls i,
-    .microphone-download-controls a {
-        font-size: 1rem;
+    @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .voice-recorder-graphics {
-        width: 92%;
-        margin: 0 auto;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .voice-recorder-graphics img {
-        height: auto;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    .voice-recorder-graphics h3 {
-        font-size: 3rem;
     }
-    
-    /* Musical Instruments */
-    
-    .music-intruments-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .music-intruments-graphics h3 {
-        font-size: 2rem;
-    }
-    
-    .play-instruments {
-        width: 92%;
-        margin: 0 auto;
-        padding: 0 4rem;
-    }
-    
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PARTNERS -------------------------- */
-    .partner-image {
-        width: 30%;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- Footer ---------------------------- */
-    footer {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-        text-align: center;
-        padding: 1.5rem 0;
-        margin-bottom: 19.5rem;
-    }
-    
-    footer h4 {
-        font-size: 0.7rem;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PLAYBAR --------------------------- */
-    .section-playbar {
-        height: auto !important;
-        padding: 1rem 0;
-        z-index: 9999;
-    }
+  /* ---------------------------------------------------------------- */
+}
 
-    .volume-container {
-        display: none;
-    }
-    
-    .section-playbar .grid-mobile{
-        row-gap: 1rem;
-    }
-    
-    .section-playbar input {
-        clear: both;
-        width: 94%;
-    }
+@media (min-width: 1281px) and (max-width: 1399px) {
 
-    .playbar-time-stamps {
-        height: 1rem;
-        width: 21rem;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+     /* ----------------------------- Navbar --------------------------- */
+.navbar {
+    background-color: transparent;
+    color: var(--white-color);
+    height: 5rem;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  nav a {
+    color: var(--white-color);
+    margin: 0 2rem;
+  }
+  
+  nav a:hover {
+    color: rgb(167, 167, 167);
+  }
+  
+  .drum {
+    margin: 0 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------------ Hero ---------------------------- */
+  .section-hero {
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.171), 
+      rgba(0, 0, 0, 0.171)
+    ),url(../resources/img/main/hero/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+  }
+  
+  .hero-text {
+    padding: 20rem 0;
+    text-align: center;
+    position: relative;
+    animation: bubbleFromTop 3s;
+  }
+  
+  .hero-text h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+  }
+  
+  .hero-text h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Services --------------------------- */
+  .section-our-services {
+    margin-top: 3rem;
+  }
+  
+  .section-our-services .container{
+    overflow: unset;
+  }
+  
+  .section-our-services .grid {
+    gap: 2rem;
+  }
+  
+  .service-1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.600), 
+      rgba(0, 0, 0, 0.600)
+    ),url(../resources/img/main/services/service-songs.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-2 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.500), 
+      rgba(0, 0, 0, 0.500)
+    ),url(../resources/img/main/services/service-vocals.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-3 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.400), 
+      rgba(0, 0, 0, 0.400)
+    ),url(../resources/img/main/services/service-instruments.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  
+  .service-1:hover { transform: scale(1.05); }
+  .service-2:hover { transform: scale(1.05); }
+  .service-3:hover { transform: scale(1.05); }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Utilities -------------------------- */
+  .section-utilities {
+    margin-top: 3rem;
+  }
+  
+  .utilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Songs List - Graphics */
+  .songs-playlist-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+    height: 51.5rem;
+  }
+  
+  .songs-playlist-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .songs-playlist-graphics img {
+    height: 30rem;
+  }
+  
+  /* Songs List - Playlist */
+  .songs-playlist {
+    height: 51.7rem;
+    border: solid 0.15rem var(--light-border); 
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .songs-playlist h3 {
+    margin-top: 1rem;
+  }
+  
+  .scrollable-list {
+    margin-top: 1rem; 
+    height: 46.5rem; 
+    overflow: scroll;
+  }
+  
+  .scrollable-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .song-container {
+    color: var(--white-color);
+    border-radius: 2rem;
+    margin: 0.1rem 0;
+    background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    animation: Gradient 10s ease infinite;
+  }
+  
+  .song-container .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0rem;
+  }
+  
+  .playnow-grid {
+    grid-column: 2/span 4;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  .song-thumbnail {
+    height: 5rem; 
+    width: 5rem; 
+    border-radius: 3rem;
+  }
+  
+  .song-controls {
+    margin-right: auto;
+  }
+  
+  .song-controls .lead-text{
+    min-width: 10rem;
+  }
+  
+  #playlist-button-play {
+    cursor: pointer;
+  }
+  
+  #playlist-button-play:hover{
+    color: rgb(167, 167, 167);
+  }
+  
+  .utilities .flex {
+    justify-content: flex-end;
+  }
+  
+  .play-button {
+    margin: 0 0.5rem;
+  }
+  
+  .song-waverforms {
+    grid-column: 1 / span 2;
+  }
+  
+  /* Voice Recorder - Recording Controls */
+  .vocals-box {
+    height: 53rem; 
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+  }
+  
+  .vocals-box .grid {
+    height: 48.7rem;
+    gap: 0rem;
+  }
+  
+  .vocals-box h3 {
+    margin-top: 1rem;
+  }
+  
+  .microphone {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone img {
+    height: 30rem;
+    width: 25rem;
+    position: absolute;
+    margin-left: 6rem;
+  }
+  
+  .microphone svg {
+    width: 100%;
+    height: 32rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  
+  .microphone-audio-controls {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1 / span 2; 
+    justify-content: space-evenly;
+    border: 0.2rem solid rgb(219, 219, 219);
+    border-radius: 1rem;
+  }
+  
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone-download-controls a {
+    color: red;
+  }
+  
+  .microphone-audio-controls i,
+  .microphone-download-controls i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(52, 50, 185);
+    margin-top: 1rem;
+  }
+  
+  .microphone-audio-controls i:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-download-controls a:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-audio-controls p,
+  .microphone-download-controls a {
+    cursor: pointer;
+  }
+  
+  .icon-record.active{
+    color: rgb(197, 0, 0);
+  }
+  
+  .button-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+  .waveforms {
+    border: solid 0.1rem var(--primary-color);
+    border-radius: 0.5rem;
+    grid-column: 1 / span 2;
+    height: 5rem; 
+    width: 34.3rem; 
+    text-align: center; 
+    margin: 0 auto;
+  }
+  
+  .record-icon {
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Voice Recorder - Graphics */
+  .voice-recorder-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .voice-recorder-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .voice-recorder-graphics img {
+    height: 38rem;
+  }
+  
+  /* Instruments - Graphics */
+  .music-intruments-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .music-intruments-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  /* Instruments - Play Instruments */
+  .play-instruments {
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+    padding: 0 6rem;
+  }
+  
+  .play-instruments h3 {
+    margin-top: 1rem;
+  }
+  
+  .play-instruments img {
+    border-radius: 1rem;
+  }
+  
+  .instrument-1,
+  .instrument-2 {
+    border: solid 0.1rem#eee;
+  }
+  
+  .button-play-piano div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-piano div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  
+  .button-play-drumkit div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-drumkit div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* -------------------------- Our Partners ------------------------ */
+  .partners-box {
+    background-color: transparent;
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .partners-box h2 {
+    color: #000;
+  }
+  
+  .partner-brands {
+    margin-top: 2rem;
+  }
+  
+  .partner-image {
+    width: 60%;
+    transition: transform 0.4s ease-in;
+  }
+  
+  .partner-image:hover{
+    transform: translateY(-15px);
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 6.5rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Keyframes --------------------------- */
+  @keyframes bubbleFromTop{
+      16%{
+        transform: translateY(-100%);
+        animation-timing-function: ease-in;
+      }
+  
+      33% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      50% {
+        transform: translateY(-20%);
+        animation-timing-function: ease-in;
+      }
+  
+      66% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      83% {
+        transform: translateY(-10%);
+        animation-timing-function: ease-in;
+      }
+  
+      100% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  }
+  
+  @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- MODALS --------------------------- */
-    /* Piano */
-    .piano-modal-heading {
-        padding: 0px 1rem;
+    50% {
+        background-position: 100% 50%;
     }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  /* ---------------------------------------------------------------- */
 
-    .piano-modal-heading h3 {
-        width: max-content;
-    }
+  /* ---------------------------- Playbar ---------------------------- */
+.section-playbar {
+    height: 6.5rem;
+    width: 100%;
+    color: var(--white-color);
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+  }
+  
+  .section-playbar .flex {
+    justify-content: space-around;
+  }
+  
+  .section-playbar img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+  }
 
-    #svgObject {
-        width: 100% !important;
-    }
-    
-    /* Drumkit */
-    .grid-mobile-3 {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        row-gap: 1rem;
-    }
-    
-    .drumkit-modal > div {
-        height: 38rem;
-    }
+  .section-playbar.play img {
+    animation-play-state: running;
+  }
+  
+  .section-playbar i {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+  }
 
-    .drumkit-modal-heading {
-        padding: 0px 2rem;
-    }
-    
-    .drumkit-modal-heading h3 {
-        font-size: 2.2rem;
-        width: max-content;
-    }
-    
-    .drumkit-player img {
-        width: 35%;
-    }
-    
-    .drumkit-beat-container {
-        height: 4rem;
-        width: 4rem;
-        margin: 0 0.5rem;
-        padding: 1rem 0;
-    }
-    
-    .drumkit-beat-container h4 {
-        text-align: center;
-        font-size: 12px;
-        padding: 0.5rem;
-    }
-    
-    .drumkit-beat-container h3 {
-        display: none;
-    }
-    
-    .drumkit-play-button div {
-        margin: 0 auto;
-        height: 2rem;
-        width: 6rem;
-        border: 1px solid var(--primary-color);
-        border-radius: 1rem;
-        padding: 0.2rem;
-    }
-    
-    .drumkit-play-button p {
-        margin: 0px;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    }
-      
-      
-    /* Small devices (landscape phones, 375px to 430px) */
-    @media (max-width: 430px) and (min-width: 375px) {
-    
-    /* ----------------------------- RESETS --------------------------- */
-    .grid-3 {
-        grid-template-columns: repeat(1, 1fr);
+  .section-playbar input {
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+      background: rgb(129, 115, 253);
+      margin-top: -6px;
+  }
+  
+  .section-playbar input {
+    width: 100%;
+  }
+
+  .playbar-song-artist {
+    margin: -1rem 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-playbar-range .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 100%;
+  }
+
+  .playbar-time-stamps{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Top Button -------------------------- */
+  .section-top-button div {
+    height: 3.5rem; 
+    width: 3.5rem; 
+    background-color: rgb(122, 122, 122); 
+    color: var(--white-color); 
+    border-radius: 0.5rem; 
+    position: fixed; 
+    bottom: 8rem; 
+    right: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .section-top-button p {
+    font-size: 1.5rem
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------ Instrument Modals ---------------------- */
+  
+  /* Modal : Piano */
+  .piano-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .piano-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .piano-modal > div {
+    height: 35rem;
+    max-width: 75rem;
+    width: 90%;
+    position: relative;
+    margin: 10% auto;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    background: rgb(179, 185, 219);
+  }
+  
+  .piano-modal .grid {
+    gap: 0rem;
+  }
+  
+  .piano-modal-header,
+  .piano-player,
+  .piano-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .piano-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .piano-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .piano-modal-heading {
+    padding: 0 26rem;
+  }
+  
+  .piano-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .piano-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: solid 0.1rem var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .piano-controls a {
+    cursor: pointer;
+  }
+  
+  /* Modal : Drumkit */
+  .drumkit-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .drumkit-modal:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  
+  .drumkit-modal > div {
+    height: 45rem;
+    max-width: 1200px;
+    width: 90%;
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(245, 227, 223);
+  }
+  
+  .drumkit-modal .grid {
+    gap: 0px;
+  }
+  
+  .drumkit-modal-header,
+  .drumkit-player,
+  .drumkit-keys,
+  .drumkit-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .drumkit-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .drumkit-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .drumkit-modal-heading {
+    padding: 0 25rem;
+  }
+  
+  .drumkit-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .drumkit-player img {
+    width: 30%;
+  }
+  
+  .drumkit-beat-container {
+    height: 6rem;
+    width: 6rem;
+    background: linear-gradient(0.65turn, #e4cc80, #ffa2a2);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+  }
+
+  .drumkit-beat-container h3,h4 {
+    pointer-events: none;
+  }
+
+  .drumkit-beat-container:hover{
+    transform: translateY(-15px);
+  }
+
+  .drumkit-beat-container.active{
+    transform: translateY(-50px);
+  }
+  
+  .drumkit-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: 1px solid var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .drumkit-controls a {
+    cursor: pointer;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* --------------------------- Keyframes --------------------------- */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
       }
     
-    .grid-5 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .grid-mobile {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- NAVBAR --------------------------- */
-    .navbar {
-        height: auto;
-    }
-    
-    .navbar ul {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .navbar ul li {
-        padding: 1rem 0;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ------------------------------- HERO ---------------------------- */
-    .hero-text {
-        padding: 10rem 0;
-    }
-    
-    .hero-text h1 {
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-    
-    .hero-text h5 {
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- UTILITIES ------------------------- */
-    .utilities {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    /* Songs Play-List */
-    .songs-playlist-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .songs-playlist-graphics h3 {
-        font-size: 4rem; 
-    }
-    
-    .songs-playlist {
-        border-radius: 1rem;
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .song-controls h4 {
-        font-size: 18px;
-    }
-    
-    .song-thumbnail {
-        height: 4rem;
-        width: 4rem;
-        border-radius: 2rem;
-    }
-    
-    /* Microphone */
-    .vocals-box {
-        border-radius: 1rem;
-        height: auto;
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .vocals-box .grid {
-        height: auto;
-    }
-    
-    .microphone {
-        height: 16rem;
-    }
-    
-    .microphone img {
-        height: 15rem;
-        width: 12.5rem;
-        margin: 0;
-        position: relative;
-    }
-    
-    .microphone svg {
-        width: 100%;
-        height: 16rem;
-        bottom: 17rem;
-        z-index: 999;
-    }
-    
-    .waveforms {
-        width: 90%;
-    }
-    
-    .record-icon-container {
-        padding: 2rem 0;
-    }
-    
-    .microphone-download-controls {
-        grid-column: 1 / span 2;
-        padding: 1rem;
+      to {
+        transform: rotate(360deg);
+      }
     }
 
-    .microphone-audio-controls i,
-    .microphone-download-controls i,
-    .microphone-download-controls a {
-        font-size: 1rem;
+    @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .voice-recorder-graphics {
-        width: 92%;
-        margin: 0 auto;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .voice-recorder-graphics img {
-        height: auto;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    .voice-recorder-graphics h3 {
-        font-size: 3rem;
-    }
-    
-    /* Musical Instruments */
-    
-    .music-intruments-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .music-intruments-graphics h3 {
-        font-size: 2rem;
-    }
-    
-    .play-instruments {
-        width: 92%;
-        margin: 0 auto;
-        padding: 0 4rem;
-    }
-    
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PARTNERS -------------------------- */
-    .partner-image {
-        width: 35%;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- Footer ---------------------------- */
-    footer {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-        text-align: center;
-        padding: 1.5rem 0;
-        margin-bottom: 19.5rem;
-    }
-    
-    footer h4 {
-        font-size: 0.8rem;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PLAYBAR --------------------------- */
-    .section-playbar {
-        height: auto !important;
-        padding: 1rem 0;
-        z-index: 9999;
-    }
-    
-    .section-playbar .grid-mobile{
-        row-gap: 1rem;
-    }
-    
-    .section-playbar input {
-        clear: both;
-        width: 94%;
     }
 
-    .playbar-time-stamps {
-        height: 1rem;
-        width: 21rem;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+    @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- MODALS --------------------------- */
-    /* Piano */
-    .piano-modal-heading {
-        padding: 0px 1rem;
+    50% {
+        background-position: 100% 50%;
     }
+    100% {
+        background-position: 0% 50%;
+    }
+    }
+  /* ---------------------------------------------------------------- */
 
-    .piano-modal-heading h3 {
-        width: max-content;
-    }
+}
 
-    #svgObject {
-        width: 100% !important;
-    }
-    
-    /* Drumkit */
-    .grid-mobile-3 {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        row-gap: 1rem;
-    }
-    
-    .drumkit-modal > div {
-        height: 48rem;
-    }
+@media (min-width: 1025px) and (max-width: 1280px) {
 
-    .drumkit-modal-heading {
-        padding: 0 2rem;
+    /* ----------------------------- Navbar --------------------------- */
+.navbar {
+    background-color: transparent;
+    color: var(--white-color);
+    height: 5rem;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  nav a {
+    color: var(--white-color);
+    margin: 0 2rem;
+  }
+  
+  nav a:hover {
+    color: rgb(167, 167, 167);
+  }
+  
+  .drum {
+    margin: 0 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------------ Hero ---------------------------- */
+  .section-hero {
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.171), 
+      rgba(0, 0, 0, 0.171)
+    ),url(../resources/img/main/hero/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+  }
+  
+  .hero-text {
+    padding: 20rem 0;
+    text-align: center;
+    position: relative;
+    animation: bubbleFromTop 3s;
+  }
+  
+  .hero-text h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+  }
+  
+  .hero-text h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Services --------------------------- */
+  .section-our-services {
+    margin-top: 3rem;
+  }
+  
+  .section-our-services .container{
+    overflow: unset;
+  }
+  
+  .section-our-services .grid {
+    gap: 2rem;
+  }
+  
+  .service-1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.600), 
+      rgba(0, 0, 0, 0.600)
+    ),url(../resources/img/main/services/service-songs.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-2 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.500), 
+      rgba(0, 0, 0, 0.500)
+    ),url(../resources/img/main/services/service-vocals.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  .service-3 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.400), 
+      rgba(0, 0, 0, 0.400)
+    ),url(../resources/img/main/services/service-instruments.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    transition: all .2s ease-in-out;
+  }
+  
+  
+  .service-1:hover { transform: scale(1.05); }
+  .service-2:hover { transform: scale(1.05); }
+  .service-3:hover { transform: scale(1.05); }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Utilities -------------------------- */
+  .section-utilities {
+    margin-top: 3rem;
+  }
+  
+  .utilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Songs List - Graphics */
+  .songs-playlist-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+    height: 51.5rem;
+  }
+  
+  .songs-playlist-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .songs-playlist-graphics img {
+    height: 30rem;
+  }
+  
+  /* Songs List - Playlist */
+  .songs-playlist {
+    height: 51.7rem;
+    border: solid 0.15rem var(--light-border); 
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .songs-playlist h3 {
+    margin-top: 1rem;
+  }
+  
+  .scrollable-list {
+    margin-top: 1rem; 
+    height: 46.5rem; 
+    overflow: scroll;
+  }
+  
+  .scrollable-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .song-container {
+    color: var(--white-color);
+    border-radius: 2rem;
+    margin: 0.1rem 0;
+    background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 5s ease infinite;
+    animation: Gradient 10s ease infinite;
+  }
+  
+  .song-container .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0rem;
+  }
+  
+  .playnow-grid {
+    grid-column: 2/span 4;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  .song-thumbnail {
+    height: 5rem; 
+    width: 5rem; 
+    border-radius: 3rem;
+  }
+  
+  .song-controls {
+    margin-right: auto;
+  }
+  
+  .song-controls .lead-text{
+    min-width: 10rem;
+  }
+  
+  #playlist-button-play {
+    cursor: pointer;
+  }
+  
+  #playlist-button-play:hover{
+    color: rgb(167, 167, 167);
+  }
+  
+  .utilities .flex {
+    justify-content: flex-end;
+  }
+  
+  .play-button {
+    margin: 0 0.5rem;
+  }
+  
+  .song-waverforms {
+    grid-column: 1 / span 2;
+  }
+  
+  /* Voice Recorder - Recording Controls */
+  .vocals-box {
+    height: 53rem; 
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+  }
+  
+  .vocals-box .grid {
+    height: 48.7rem;
+    gap: 0rem;
+  }
+  
+  .vocals-box h3 {
+    margin-top: 1rem;
+  }
+  
+  .microphone {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone img {
+    height: 30rem;
+    width: 25rem;
+    position: absolute;
+    margin-left: 6rem;
+  }
+  
+  .microphone svg {
+    width: 100%;
+    height: 32rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  
+  .microphone-audio-controls {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1 / span 2; 
+    justify-content: space-evenly;
+    border: 0.2rem solid rgb(219, 219, 219);
+    border-radius: 1rem;
+  }
+  
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+  }
+  
+  .microphone-download-controls a {
+    color: red;
+  }
+  
+  .microphone-audio-controls i,
+  .microphone-download-controls i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(52, 50, 185);
+    margin-top: 1rem;
+  }
+  
+  .microphone-audio-controls i:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-download-controls a:hover{
+    color: rgb(94, 94, 94);
+  }
+  
+  .microphone-audio-controls p,
+  .microphone-download-controls a {
+    cursor: pointer;
+  }
+  
+  .icon-record.active{
+    color: rgb(197, 0, 0);
+  }
+  
+  .button-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  
+  .waveforms {
+    border: solid 0.1rem var(--primary-color);
+    border-radius: 0.5rem;
+    grid-column: 1 / span 2;
+    height: 5rem; 
+    width: 34.3rem; 
+    text-align: center; 
+    margin: 0 auto;
+  }
+  
+  .record-icon {
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Voice Recorder - Graphics */
+  .voice-recorder-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .voice-recorder-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  .voice-recorder-graphics img {
+    height: 38rem;
+  }
+  
+  /* Instruments - Graphics */
+  .music-intruments-graphics {
+    border: solid 0.4rem rgb(0, 0, 0);
+    border-radius: 2rem; 
+  }
+  
+  .music-intruments-graphics h3 {
+    font-size: 4rem; 
+    font-family: var(--cursive-font);
+  }
+  
+  /* Instruments - Play Instruments */
+  .play-instruments {
+    border: solid 0.15rem var(--light-border);  
+    border-radius: 2rem;
+    padding: 0 6rem;
+  }
+  
+  .play-instruments h3 {
+    margin-top: 1rem;
+  }
+  
+  .play-instruments img {
+    border-radius: 1rem;
+  }
+  
+  .instrument-1,
+  .instrument-2 {
+    border: solid 0.1rem#eee;
+  }
+  
+  .button-play-piano div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-piano div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  
+  .button-play-drumkit div {
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color); 
+    border-radius: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .button-play-drumkit div:hover{
+    height: 2rem; 
+    width: 12rem; 
+    padding: 0.1rem 0;
+    border: solid 0.1rem var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    color: #fff;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* -------------------------- Our Partners ------------------------ */
+  .partners-box {
+    background-color: transparent;
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .partners-box h2 {
+    color: #000;
+  }
+  
+  .partner-brands {
+    margin-top: 2rem;
+  }
+  
+  .partner-image {
+    width: 60%;
+    transition: transform 0.4s ease-in;
+  }
+  
+  .partner-image:hover{
+    transform: translateY(-15px);
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 6.5rem;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Keyframes --------------------------- */
+  @keyframes bubbleFromTop{
+      16%{
+        transform: translateY(-100%);
+        animation-timing-function: ease-in;
+      }
+  
+      33% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      50% {
+        transform: translateY(-20%);
+        animation-timing-function: ease-in;
+      }
+  
+      66% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  
+      83% {
+        transform: translateY(-10%);
+        animation-timing-function: ease-in;
+      }
+  
+      100% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+      }
+  }
+  
+  @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .drumkit-modal-heading h3 {
-        width: max-content;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .drumkit-player img {
-        width: 45%;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    .drumkit-beat-container h4 {
-        padding: 1rem;
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .drumkit-beat-container h3 {
-        display: none;
+    50% {
+        background-position: 100% 50%;
     }
-    /* ---------------------------------------------------------------- */
-    
+    100% {
+        background-position: 0% 50%;
     }
-        
-        
-        
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 769.98px) { 
-    
-    /* ----------------------------- RESETS --------------------------- */
-    .grid-3 {
-        grid-template-columns: repeat(1, 1fr);
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Playbar ---------------------------- */
+.section-playbar {
+    height: 6.5rem;
+    width: 100%;
+    color: var(--white-color);
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #6123d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 15s ease infinite;
+  }
+  
+  .section-playbar .flex {
+    justify-content: space-around;
+  }
+  
+  .section-playbar img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .section-playbar.play img {
+    animation-play-state: running;
+  }
+  
+  .section-playbar i {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+  }
+
+  .section-playbar input {
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+      background: rgb(129, 115, 253);
+      margin-top: -6px;
+  }
+  
+  .section-playbar input {
+    width: auto;
+  }
+
+  .playbar-song-artist {
+    margin: -1rem 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-playbar-range .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: auto;
+  }
+
+  .playbar-time-stamps{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* --------------------------- Top Button -------------------------- */
+  .section-top-button div {
+    height: 3.5rem; 
+    width: 3.5rem; 
+    background-color: rgb(122, 122, 122); 
+    color: var(--white-color); 
+    border-radius: 0.5rem; 
+    position: fixed; 
+    bottom: 8rem; 
+    right: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .section-top-button p {
+    font-size: 1.5rem
+  }
+  /* ---------------------------------------------------------------- */
+  
+  
+  
+  
+  /* ------------------------ Instrument Modals ---------------------- */
+  
+  /* Modal : Piano */
+  .piano-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .piano-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .piano-modal > div {
+    height: 35rem;
+    max-width: 75rem;
+    width: 90%;
+    position: relative;
+    margin: 10% auto;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    background: rgb(179, 185, 219);
+  }
+  
+  .piano-modal .grid {
+    gap: 0rem;
+  }
+  
+  .piano-modal-header,
+  .piano-player,
+  .piano-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .piano-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .piano-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .piano-modal-heading {
+    padding: 0 26rem;
+  }
+  
+  .piano-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .piano-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: solid 0.1rem var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .piano-controls a {
+    cursor: pointer;
+  }
+  
+  /* Modal : Drumkit */
+  .drumkit-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+  }
+  
+  .drumkit-modal:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  
+  .drumkit-modal > div {
+    height: 45rem;
+    max-width: 1200px;
+    width: 90%;
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(245, 227, 223);
+  }
+  
+  .drumkit-modal .grid {
+    gap: 0px;
+  }
+  
+  .drumkit-modal-header,
+  .drumkit-player,
+  .drumkit-keys,
+  .drumkit-play-button {
+    grid-column: 1 / span 2;
+  }
+  
+  .drumkit-modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .drumkit-modal-header p {
+    font-size: 1.5rem;
+  }
+  
+  .drumkit-modal-heading {
+    padding: 0 25rem;
+  }
+  
+  .drumkit-modal-heading h3 {
+    font-family: var(--cursive-font);
+    font-size: 3.5rem;
+  }
+  
+  .drumkit-player img {
+    width: 30%;
+  }
+  
+  .drumkit-beat-container {
+    height: 6rem;
+    width: 6rem;
+    background: linear-gradient(0.65turn, #e4cc80, #ffa2a2);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+  }
+
+  .drumkit-beat-container h3,h4 {
+    pointer-events: none;
+  }
+
+  .drumkit-beat-container:hover{
+    transform: translateY(-15px);
+  }
+
+  .drumkit-beat-container.active{
+    transform: translateY(-50px);
+  }
+  
+  .drumkit-play-button div {
+    margin: 0 auto; 
+    height: 3rem; 
+    width: 10rem; 
+    border: 1px solid var(--primary-color); 
+    border-radius: 1rem;
+  }
+  
+  .drumkit-controls a {
+    cursor: pointer;
+  }
+  /* ---------------------------------------------------------------- */
+
+
+
+  /* --------------------------- Keyframes --------------------------- */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
       }
     
-    .grid-5 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .grid-mobile {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- NAVBAR --------------------------- */
-    .navbar {
-        height: auto;
-    }
-    
-    .navbar ul {
-        display: grid !important;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .navbar ul li {
-        padding: 1rem 0;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ------------------------------- HERO ---------------------------- */
-    .hero-text {
-        padding: 14rem 0;
-    }
-    
-    .hero-text h1 {
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-    
-    .hero-text h5 {
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- UTILITIES ------------------------- */
-    .utilities {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    /* Songs Play-List */
-    .songs-playlist-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .songs-playlist {
-        border-radius: 1rem;
-        width: 92%;
-        margin: 0 auto;
+      to {
+        transform: rotate(360deg);
+      }
     }
 
-    .song-controls .lead-text {
-        overflow: hidden;
+    @keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    /* Microphone */
-    .vocals-box {
-        border-radius: 1rem;
-        height: auto;
-        width: 92%;
-        margin: 0 auto;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .vocals-box .grid {
-        height: auto;
+    100% {
+        background-position: 0% 50%;
     }
-    
-    .microphone {
-        height: 16rem;
-    }
-    
-    .microphone img {
-        height: 15rem;
-        width: 12.5rem;
-        margin: 0;
-        position: relative;
-    }
-    
-    .microphone svg {
-        width: 100%;
-        height: 16rem;
-        bottom: 17rem;
-        z-index: 999;
-    }
-    
-    .waveforms {
-        width: 90%;
-    }
-    
-    .record-icon-container {
-        padding: 2rem 0;
-    }
-    
-    .microphone-download-controls {
-        grid-column: 1 / span 2;
-        padding: 1rem;
-    }
-    
-    .voice-recorder-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .voice-recorder-graphics img {
-        height: auto;
-    }
-    
-    /* Musical Instruments */
-    
-    .music-intruments-graphics {
-        width: 92%;
-        margin: 0 auto;
-    }
-    
-    .play-instruments {
-        width: 92%;
-        margin: 0 auto;
-        padding: 0 4rem;
-    }
-    
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PARTNERS -------------------------- */
-    .partner-image {
-        width: 20%;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- Footer ---------------------------- */
-    footer {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-        text-align: center;
-        padding: 2.5rem 0;
-        margin-bottom: 19.5rem;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ---------------------------- PLAYBAR --------------------------- */
-    .section-playbar {
-        height: auto !important;
-        padding: 1rem 0;
-        z-index: 9999;
     }
 
-    .volume-container {
-        display: none;
+    @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .section-playbar .grid-mobile{
-        row-gap: 1rem;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .section-playbar input {
-        clear: both;
-        width: 94%;
+    100% {
+        background-position: 0% 50%;
     }
+    }
+  /* ---------------------------------------------------------------- */
+}
 
-    .playbar-time-stamps {
-        height: 1rem;
-        width: 45rem;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    
-    
-    
-    /* ----------------------------- MODALS --------------------------- */
-        
-    /* Piano */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .piano-modal-heading {
-        padding: 0px 10rem;
-    }
-    
-    .piano-modal-heading h3 {
-        width: max-content;
-    }
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    #svgObject {
-        width: 100% !important;
-    }
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
 
-    /* Drumkit */
-    .grid-mobile-3 {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        row-gap: 1rem;
-    }
-    
-    .drumkit-modal > div {
-        height: 59rem;
-    }
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
 
-    .drumkit-modal-heading {
-        padding: 0 10rem;
-    }
-    
-    .drumkit-modal-heading h3 {
-        width: max-content;
-    }
-    
-    .drumkit-player img {
-        width: 45%;
-    }
-    
-    .drumkit-beat-container h4 {
-        padding: 1rem;
-    }
-    
-    .drumkit-beat-container h3 {
-        display: none;
-    }
-    /* ---------------------------------------------------------------- */
-    
-    }
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+    font-size: 1.2em;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 10rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 6rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist-graphics h3 {
+    font-size: 4rem;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls h4 {
+    font-size: 18px;
+  }
+
+  .song-thumbnail {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .microphone-audio-controls i,
+  .microphone-download-controls i,
+  .microphone-download-controls a {
+    font-size: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  .voice-recorder-graphics h3 {
+    font-size: 3rem;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .music-intruments-graphics h3 {
+    font-size: 2rem;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 25%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 22rem;
+  }
+
+  footer h4 {
+    font-size: 0.8rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+  /* Piano */
+  .piano-modal-heading {
+    padding: 0px 1rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 78rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0 2rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 45%;
+  }
+
+  .drumkit-beat-container h4 {
+    padding: 1rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 10rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist-graphics h3 {
+    font-size: 4rem;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls h4 {
+    font-size: 18px;
+  }
+
+  .song-thumbnail {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .microphone-audio-controls i,
+  .microphone-download-controls i,
+  .microphone-download-controls a {
+    font-size: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  .voice-recorder-graphics h3 {
+    font-size: 3rem;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .music-intruments-graphics h3 {
+    font-size: 2rem;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 35%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 19.5rem;
+  }
+
+  footer h4 {
+    font-size: 0.8rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+  /* Piano */
+  .piano-modal-heading {
+    padding: 0px 1rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 48rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0 2rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 45%;
+  }
+
+  .drumkit-beat-container h4 {
+    padding: 1rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 10rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist-graphics h3 {
+    font-size: 4rem;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls h4 {
+    font-size: 18px;
+  }
+
+  .song-thumbnail {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .microphone-audio-controls i,
+  .microphone-download-controls i,
+  .microphone-download-controls a {
+    font-size: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  .voice-recorder-graphics h3 {
+    font-size: 3rem;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .music-intruments-graphics h3 {
+    font-size: 2rem;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 35%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 19.5rem;
+  }
+
+  footer h4 {
+    font-size: 0.8rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+  /* Piano */
+  .piano-modal-heading {
+    padding: 0px 1rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 48rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0 2rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 45%;
+  }
+
+  .drumkit-beat-container h4 {
+    padding: 1rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* ----------------------------- RESETS --------------------------- */
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-mobile {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- NAVBAR --------------------------- */
+  .navbar {
+    height: auto;
+  }
+
+  .navbar ul {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    padding: 1rem 0;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ------------------------------- HERO ---------------------------- */
+  .hero-text {
+    padding: 10rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .hero-text h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- UTILITIES ------------------------- */
+  .utilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Songs Play-List */
+  .songs-playlist-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .songs-playlist-graphics h3 {
+    font-size: 4rem;
+  }
+
+  .songs-playlist {
+    border-radius: 1rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .song-controls h4 {
+    font-size: 18px;
+  }
+
+  .song-thumbnail {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+  }
+
+  /* Microphone */
+  .vocals-box {
+    border-radius: 1rem;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .vocals-box .grid {
+    height: auto;
+  }
+
+  .microphone {
+    height: 16rem;
+  }
+
+  .microphone img {
+    height: 15rem;
+    width: 12.5rem;
+    margin: 0;
+    position: relative;
+  }
+
+  .microphone svg {
+    width: 100%;
+    height: 16rem;
+    bottom: 17rem;
+    z-index: 999;
+  }
+
+  .waveforms {
+    width: 90%;
+  }
+
+  .record-icon-container {
+    padding: 2rem 0;
+  }
+
+  .microphone-download-controls {
+    grid-column: 1 / span 2;
+    padding: 1rem;
+  }
+
+  .microphone-audio-controls i,
+  .microphone-download-controls i,
+  .microphone-download-controls a {
+    font-size: 1rem;
+  }
+
+  .voice-recorder-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .voice-recorder-graphics img {
+    height: auto;
+  }
+
+  .voice-recorder-graphics h3 {
+    font-size: 3rem;
+  }
+
+  /* Musical Instruments */
+
+  .music-intruments-graphics {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .music-intruments-graphics h3 {
+    font-size: 2rem;
+  }
+
+  .play-instruments {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PARTNERS -------------------------- */
+  .partner-image {
+    width: 35%;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- Footer ---------------------------- */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 19.5rem;
+  }
+
+  footer h4 {
+    font-size: 0.8rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ---------------------------- PLAYBAR --------------------------- */
+  .section-playbar {
+    height: auto !important;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+
+  .section-playbar .grid-mobile {
+    row-gap: 1rem;
+  }
+
+  .section-playbar input {
+    clear: both;
+    width: 94%;
+  }
+
+  .playbar-time-stamps {
+    height: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  /* ---------------------------------------------------------------- */
+
+  /* ----------------------------- MODALS --------------------------- */
+  /* Piano */
+  .piano-modal-heading {
+    padding: 0px 1rem;
+  }
+
+  .piano-modal-heading h3 {
+    width: max-content;
+  }
+
+  #svgObject {
+    width: 100% !important;
+  }
+
+  /* Drumkit */
+  .grid-mobile-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+
+  .drumkit-modal > div {
+    height: 48rem;
+  }
+
+  .drumkit-modal-heading {
+    padding: 0 2rem;
+  }
+
+  .drumkit-modal-heading h3 {
+    width: max-content;
+  }
+
+  .drumkit-player img {
+    width: 45%;
+  }
+
+  .drumkit-beat-container h4 {
+    padding: 1rem;
+  }
+
+  .drumkit-beat-container h3 {
+    display: none;
+  }
+  /* ---------------------------------------------------------------- */
+}
+
+@media (max-width: 319px) {
+}
